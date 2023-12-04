@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vpnHunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="relative">
+        <nav
+            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div class="container">
+                <div class="flex flex-wrap items-center justify-between py-4">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
+                                    aria-current="page">Best VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                            </li>
+                            <li>
+                                <a href="guides.html"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main search start here -->
+        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
+            <form class="flex items-center">   
+                <div class="relative w-full">
+                    <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>   
+                    <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
+                </div>
+                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </form>
+        </div>
+        <!-- main search end here -->
+    </header>
+    <!-- header end here -->
+
+    <!-- top banner start here -->
+    <section class="py-14">
+        <div>
+            <div class="container">
+                  <div class="mx-auto max-w-screen-md text-center content-center justify-center">
+                    <img src="images/404.svg" alt="#" class="inline-block" />
+                    <h1 class="font-medium text-3xl md:text-4xl text-black mb-6">Page not Found</h1>
+                    <p>
+                        Sorry, the page you are looking for doesn’t exist or has been removed. Keep exploring out site:
+                    </p>
+                    <a href="index.html" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block mt-10">Go to Home</a>
+                </div>                  
+            </div>
+          </div>
+    </section>
+    <!-- top banner end here -->
+
+    <!-- footer start here -->
+<footer class="bg-fixed bg-cover md:py-16 py-14" style="background-image: url('images/gray-bg.png');">
+    <div class="container mx-auto">
+        <div class="lg:flex justify-between align-middle border-b pb-3">
+            <div class="relative">
+                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+            </div>
+            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
+                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            </ul>
+        </div>
+        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
+            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
+            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
+            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
+        </ul>
+          <div class="lg:flex flex-row-reverse justify-between align-middle">
+            <ul class="lg:flex lg:space-x-4">
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Terms of Use</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Disclaimer</a>
+            </ul>
+            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
+          </div>
+    </div>
+</footer>
+    <!-- footer end here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script>
+    // mobile humburger menu start 
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('navbar-sticky');
+const menuIconOpen = document.getElementById('menu-icon-open');
+const menuIconClose = document.getElementById('menu-icon-close');
+
+mobileMenuButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('open-navbar');
+    menuIconOpen.classList.toggle('hidden');
+    menuIconClose.classList.toggle('hidden');
+});
+// mobile humburger menu end
+
+//top search start here 
+var toggleButton = document.getElementById("top-search");
+  var mainSearch = document.getElementById("main-search");
+  var searchCloseButton = document.getElementById("search-close");
+
+  toggleButton.addEventListener("click", function() {
+    mainSearch.classList.toggle("open-search-form");
+  });
+
+  searchCloseButton.addEventListener("click", function() {
+    mainSearch.classList.remove("open-search-form");
+  });
+  // top search end here 
+
+  // fixed header start here 
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 0) {
+        header.classList.add("fixed-header");
+      } else {
+        header.classList.remove("fixed-header");
+      }
+    });
+});
+// fixed header end here 
+</script>
+</body>
+
+</html>

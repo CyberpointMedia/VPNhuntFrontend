@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vpnHunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="relative">
+        <nav
+            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div class="container">
+                <div class="flex flex-wrap items-center justify-between py-4">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
+                                    aria-current="page">Best VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                            </li>
+                            <li>
+                                <a href="guides.html"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main search start here -->
+        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
+            <form class="flex items-center">   
+                <div class="relative w-full">
+                    <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>   
+                    <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
+                </div>
+                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </form>
+        </div>
+        <!-- main search end here -->
+    </header>
+    <!-- header end here -->
+
+    <!-- top banner start here -->
+    <section class="author_top_sec">
+        <div>
+            <div class="container">
+                <nav class="mb-10 pt-6" aria-label="breadcrumb">
+                    <ol class="flex space-x-2 items-center">
+                        <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
+                        <li class="text-black flex space-x-1 items-center"><a href="guides.html">Team</a><span>/</span></li>
+                        <li class="text-red-400 text-sm" aria-current="page">Simon Miglian</li>
+                      </ol>
+                  </nav>                 
+            </div>
+          </div>
+    </section>
+    <!-- top banner end here -->
+
+    <!-- author section start here -->
+    <section class="our-expertise-sec lg:pt-5 lg:pb-10">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col flex-wrap relative items-start pl-0 md:pl-10 lg:pl-0">
+                <div class="lg:w-3/12 rounded-lg relative bg-gray-light-200 mb-3 md:mb-4 lg:mb-0">
+                    <img class="" src="images/team-member10.svg" alt="#">
+
+                    <ul id="v-tabs" class="flex-column text-sm font-medium bg-white border border-t-0 py-4">
+                        <li>
+                            <a href="#tab1" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent" aria-current="page">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                Research
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                Public Policy & Academia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                Experience
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                Education
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-3/4 lg:pl-16 text-left">
+                    <h3 class="font-medium text-3xl md:text-4xl mb-1 md:mt-0 mt-3">Simon Migliano</h3>
+                    <p>Head of Research</p>
+                    <ul class="flex space-x-3 my-3 mb-8">
+                        <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="far fa-envelope"></i></a></li>
+                        <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra sapien in erat dapibus rhoncus. Pellentesque dignissim, ex sed elementum euismod, arcu neque vestibulum ex, nec fringilla nibh mauris vitae ligula. Mauris porttitor ullamcorper nibh, posuere commodo dolor ornare at.
+                    </p>
+
+                    <!-- tab content start -->
+                    <div class="vertical-tb-content mt-10">
+                        <!-- tab content 1 start -->
+                        <div id="tab1" class="text-medium w-full tab-content">
+                            <div class="overview-content relative">
+                                <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Overiew</h3>
+                                    <p>
+                                        Simon Migliano is an author, journalist and Head of Research at <a href="javascript:void(0);" class="text-red-400 hover-text">vpnhunt.com.</a>
+                                        His research is focused on all aspects of VPNs, from technical analysis of the software to investigation of the corporate activities of VPN providers.
+                                        Simon’s work also explores the broader issues of internet censorship, privacy and cybersecurity.
+                                        <br>
+                                        <br>
+                                        His <a href="javascript:void(0);" class="text-red-400 hover-text">VPN reviews</a> and research into <a href="javascript:void(0);" class="text-red-400 hover-text">the best VPN services</a> have helped millions of people find a safe and secure VPN service.
+                                        He is an accredited journalist and member of the National Union of Journalists. His research has been featured in Wired, ZDNet, Bleeping Computer, CNet and many other leading technology publications around the world.
+                                        <br>
+                                        <br>
+                                        Simon has also appeared on BBC Watchdog and Sky News, where he has talked about his research to help raise awareness of digital privacy. He has also appeared on BBC Radio to talk about internet shutdowns around the world and to give advice about public WiFi safety.
+                                        <br>
+                                        <br>
+                                        In the video below, you can see Simon explaining VPN services — and their ability to fight censorship — in an interview on Euronews:
+                                    </p>
+                            </div>
+                        </div>
+
+                        <!-- tab content 2 start -->
+                        <div id="tab2" class="text-medium w-full tab-content">
+                            <div class="research-content relative">
+                                <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Research</h3>
+                                    <p>
+                                        Simon Migliano is best known for his extensive VPN investigations as well as in-depth research into internet censorship and privacy issues. Some of his most notable studies include:
+                                    </p>
+                                    <ul class="mt-3 space-y-3 list-disc pl-7">
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Websites Blocked in Russia</a>: tracks and analyzes the thousands of websites officially blocked in Russia since the invasion of Ukraine that relate to the conflict. The result is the only public dataset of its kind in the world.
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">The Global Cost of Internet Shutdowns</a>: monitors the economic cost of every major internet shutdown around the world since 2019. This research is regularly cited by academics and major government organizations.
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">The Dangers of Free VPN</a> is a collection of 11 research reports into various aspects of the ownership and security of free VPN mobile apps. I have also explored app store policies around VPN privacy.
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Global Mobile VPN Report 2019</a>: a world-first study of mobile VPN download growth across 70+ countries with year-over-year data back to 2016.
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Collateral Damage in the War Against Online Harms</a>: co-authored with Open Rights Group, this investigation into overblocking of websites by UK ISPs revealed over 400 charity, school and social supports sites had been blocked in error.
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- tab content 3 start -->
+                        <div id="tab3" class="text-medium w-full tab-content">
+                            <div class="academia-content relative">
+                                <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Academia</h3>
+                                    <p>
+                                        Simon’s ongoing research into the <a href="javascript:void(0);" class="text-red-400 hover-text">Cost of Internet Shutdowns</a> with <a href="javascript:void(0);" class="text-red-400 hover-text">Samuel Woodhams</a> is regularly cited in public policy documents and academic papers. 
+                                        Some examples of this include:
+                                    </p>
+                                    <ul class="mt-3 space-y-3 list-disc pl-7">
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">United States International Trade Commission official report</a>: United States International Trade Commission Foreign Censorship, Part 2: Trade and Economic Effects on U.S. Businesses
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Digital Economy Report 2021</a> for the United Nations Conference on Trade and Development
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Center for Democracy & Technology submission</a> to the U.S. Sentate Finance Committee
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Academic paper</a> authored by researchers at University of Kashmir: “Impact of Internet Blockade Post Abrogation of Article 370 of Indian Constitution on Doctoral Students Pursuing Research in Kashmir”
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);" class="text-red-400 hover-text">Academic paper</a> by White, P of University of Maine, “Symbiotic Suppression: How Digital Authoritarianism Helps Facilitate Physical Repression in Indian Controlled Kashmir”
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+
+                        <!-- tab content 4 start -->
+                        <div id="tab4" class="text-medium w-full tab-content">
+                            <div class="experience-content relative">
+                                <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Experience</h3>
+                                    <p>
+                                        Simon is frequently quoted as a VPN expert in privacy-related news stories and features, such as The Guardian, BBC News, CNN, CBS News, TIME, Los Angeles Times and The Sunday Times.
+                                        <br>
+                                        <br>
+                                        As well as authoring research for Top10VPN.com, Simon has written articles on VPN, privacy and censorship issues for other well-respected sites including Hackernoon, Reuters, OpenDemocracy and TechRadar.
+                                        <br>
+                                        <br>
+                                        Simon brings extensive experience in technology and research from his 17-year career. He began as a journalist for the Australian Associated Press (AAP) in Sydney, Australia before emerging as a tech business leader in London, UK and Shanghai, China.
+                                        <br>
+                                        <br>
+                                        He was the first team member to join Top10VPN.com and played a significant role in launching the VPN review website, extensively testing all the leading VPN services and writing the first VPN reviews and privacy guides.
+                                        <br>
+                                        <br>
+                                        Simon has been a long-time user of both consumer and enterprise VPN technology. His time leading a Shanghai-based team remotely from London and working in China has given Simon first-hand experience of relying on a VPN as a vital anti-censorship tool.
+                                        <br>
+                                        <br>
+                                        His VPN investigations and other digital privacy and cybersecurity research have been featured in leading news sites including The New York Times, Bloomberg, The Financial Times, The Wall Street Journal, The Telegraph, Quartz, The Economist, Der Spiegel, NBC News, The Times, Fortune, and Fast Company.
+                                        <br>
+                                        <br>
+                                        His research findings have also received extensive coverage in major foreign-language publications all over the world, such as Deutsche Welle, CNet Japan, Repubblica, Le Figaro, ZDNet France, PC Magazin and CNN Espanol.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <!-- tab content 5 start -->
+                        <div id="tab5" class="text-medium w-full tab-content">
+                            <div class="education-content relative">
+                                <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Education</h3>
+                                    <p>
+                                        Simon holds a Postgraduate Diploma in Journalism from the University of Technology, Sydney (UTS) and a bachelor’s degree from The University of Liverpool.
+                                        <br>
+                                        <br>Media Inquiries: Please contact Simon at <a href="javascript:void(0);" class="text-red-400 hover-text">simon@vpnhunt.com</a> or visit our <a href="javascript:void(0);" class="text-red-400 hover-text">Press Room</a> for more information.
+                                    </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- tab content end -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- author section end here -->
+
+    <!-- Latest articles section start -->
+    <section class="latest_articles md:py-14 py-8">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="font-medium text-3xl md:text-4xl text-black">
+                    Latest articles by Simon Migliano
+                </h2>
+                <p class="text-lg font-normal mt-3 mb-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros ipsum, blandit eget tincidunt nec.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-3">
+                <!-- blog 1 -->
+               <div class="btn-black-dark rounded-lg p-5 pt-8 relative blogs-col">
+                   <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                   <img src="images/blog1.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                   <a href="javascript:void(0);" class="text-white">
+                       <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                       <span class="block mt-2 text-2xl font-medium">What is a VPN?</span></a>
+                   
+               </div>
+               <!-- blog 2 -->
+               <div class="btn-orange-light-100 rounded-lg p-5 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                <img src="images/blog2.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How to Set Up a VPN?
+                    </span></a>
+                
+            </div>
+            <!-- blog 3 -->
+            <div class="btn-voilet-light-300 rounded-lg p-5 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                <img src="images/blog3.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How does a VPN work to encrypt your data?</span></a>
+                
+            </div>
+            <!-- blog 4 -->
+            <div class="bg-yellow-light-200 rounded-lg p-5 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                <img src="images/blog4.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">Are VPNs 100% safe?
+                    </span></a>
+                
+            </div>
+            <!-- blog 5 -->
+            <div class="bg-blue-dark-400 rounded-lg p-5 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                <img src="images/blog5.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">Are VPNs legal? Check before you use one</span></a>
+                
+            </div>
+            <!-- blog 6 -->
+            <div class="bg-green-dark-400 rounded-lg p-5 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon.png" alt="#" class="w-8 h-8"></a>
+                <img src="images/blog6.png" alt="#" class="mx-auto w-40 h-32 mb-5">
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How does a VPN work to encrypt your data?</span></a>
+                
+            </div>
+            </div>
+            <div class="text-center my-8">
+                <a href="guides.html" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">See All Guides</a>
+            </div>
+        </div>
+    </section>
+    <!-- Latest articles section end -->
+
+    <!-- footer start here -->
+<footer class="bg-fixed bg-cover md:py-16 py-14" style="background-image: url('images/gray-bg.png');">
+    <div class="container mx-auto">
+        <div class="lg:flex justify-between align-middle border-b pb-3">
+            <div class="relative">
+                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+            </div>
+            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
+                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            </ul>
+        </div>
+        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
+            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
+            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
+            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
+        </ul>
+          <div class="lg:flex flex-row-reverse justify-between align-middle">
+            <ul class="lg:flex lg:space-x-4">
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Terms of Use</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Disclaimer</a>
+            </ul>
+            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
+          </div>
+    </div>
+</footer>
+    <!-- footer end here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script>
+    // mobile humburger menu start 
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('navbar-sticky');
+const menuIconOpen = document.getElementById('menu-icon-open');
+const menuIconClose = document.getElementById('menu-icon-close');
+
+mobileMenuButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('open-navbar');
+    menuIconOpen.classList.toggle('hidden');
+    menuIconClose.classList.toggle('hidden');
+});
+// mobile humburger menu end
+
+//top search start here 
+var toggleButton = document.getElementById("top-search");
+  var mainSearch = document.getElementById("main-search");
+  var searchCloseButton = document.getElementById("search-close");
+
+  toggleButton.addEventListener("click", function() {
+    mainSearch.classList.toggle("open-search-form");
+  });
+
+  searchCloseButton.addEventListener("click", function() {
+    mainSearch.classList.remove("open-search-form");
+  });
+  // top search end here 
+
+  // fixed header start here 
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 0) {
+        header.classList.add("fixed-header");
+      } else {
+        header.classList.remove("fixed-header");
+      }
+    });
+});
+// fixed header end here 
+
+$(document).ready(function() {    
+    $('#v-tabs li a:not(:first)').addClass('inactive');
+    $('.tab-content').hide();
+    $('.tab-content:first').show();
+    $('#v-tabs li a').click(function(){
+        var t = $(this).attr('href');
+        $('#v-tabs li a').addClass('inactive');        
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');
+        return false;
+    })
+
+    if($(this).hasClass('inactive')){ //this is the start of our condition 
+        $('#v-tabs li a').addClass('inactive');         
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');    
+    }
+});
+
+
+</script>
+</body>
+
+</html>

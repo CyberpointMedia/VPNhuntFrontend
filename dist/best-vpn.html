@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vpnHunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="relative">
+        <nav
+            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div class="container">
+                <div class="flex flex-wrap items-center justify-between py-4">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
+                                    aria-current="page">Best VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                            </li>
+                            <li>
+                                <a href="guides.html"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main search start here -->
+        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
+            <form class="flex items-center">   
+                <div class="relative w-full">
+                    <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>   
+                    <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
+                </div>
+                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </form>
+        </div>
+        <!-- main search end here -->
+    </header>
+    <!-- header end here -->
+
+    <!-- top banner start here -->
+    <section class="contact-top-bg bg-center bg-cover pb-10" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
+        <div>
+            <div class="container">
+                <nav class="mb-10 pt-6" aria-label="breadcrumb">
+                    <ol class="flex space-x-2 items-center">
+                        <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
+                        <li class="text-red-400 text-sm" aria-current="page">The Best VPNs of 2023</li>
+                      </ol>
+                  </nav>
+                    <div class="flex md:flex-row flex-col flex-wrap relative md:text-left pb-8 pt-3">
+                        <div class="md:w-2/3 w-full">
+                            <h1 class="font-medium text-4xl text-black mb-3">
+                                Top 10 Best VPN Services of 2023
+                            </h1>
+                            <p class="text-base">
+                                Our experts did the heavy lifting of testing dozens of VPNs, and these VPN services worked best.
+                            </p>
+                            <ul class="flex space-x-3 my-4 items-center">
+                                <li>
+                                    <img src="images/profile-icon.svg" alt="#" class="inline-block" />
+                                    <a href="javascript:void(0);" class="text-red-400 text-sm font-medium">Steve Ongaro</a>
+                                    <img src="images/vertical-line.svg" alt="#" class="inline-block" />
+                                    <span class="text-sm">Fact-checked and Reviewed by</span>
+                                </li>
+                                <li>
+                                    <img src="images/profile-icon.svg" alt="#" class="inline-block" />
+                                    <a href="javascript:void(0);" class="text-red-400 text-sm font-medium">Callum Tennent</a>
+                                    <img src="images/vertical-line.svg" alt="#" class="inline-block" />
+                                </li>
+                                <li>
+                                    <img src="images/check-circle-icon.svg" alt="#" class="inline-block" />
+                                    <span class="text-sm">Last Updated Sep 19, 2023</span>
+                                </li>
+                            </ul>
+                            <div class="flex flex-wrap items-center">
+                                <p>Share on:</p>
+                                <ul class="flex space-x-3 pl-3">
+                                    <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-instagram-square"></i></a></li>
+                                    <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-twitter-square"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md:w-1/3 w-full">
+                            <img src="images/best-vpn-img.svg" alt="#" class="w-7/12" />
+                        </div>
+                    </div>                   
+            </div>
+          </div>
+    </section>
+    <!-- top banner end here -->
+
+    <!-- page link start -->
+    <section class="page-link mobile-none">
+        <div class="container">
+            <div class="flex flex-wrap items-center text-left">
+                <p class="font-medium text-base">VPN Guides:</p>
+                <ul class="flex space-x-3 justify-center md:pl-8 overflow-x-auto w-10/12 horizontal-scroll">
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text active">VPN for Straming</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-30 hover-text">VPNs for Torrenting</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">VPNs for Gamers</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">VPNs for Cheap</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">VPNs for iPhone</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">VPNs for Android</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">Free VPNs</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300 hover-text">VPNs for Chrome</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- page link end -->
+
+    <!-- terms conditions content section start here -->
+    <section class="our-expertise-sec lg:py-14">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col flex-wrap relative items-start pl-0 md:pl-10 lg:pl-0">
+                <div class="lg:w-3/12 rounded-lg relative mb-3 md:mb-4 lg:mb-0 md-sm-none">
+                    <div class="topVpn-deals">
+                        <p class="mb-3 font-medium">Top VPN Deals</p>
+                        <ul class="border relative mb-6">
+                            <div class="absolute -left-1 -top-1 w-28 h-6" style="background-image: url(images/editor-choice.svg);">
+                            </div>
+                            <li class="flex text-center items-center border-b px-5 py-4 justify-between">
+                                <img src="images/express-vpn-brand-logo.svg" alt="#" />
+                                <p class="text-xs px-5">
+                                    SAVE 61% + 3 months FREE
+                                    <a href="javascript:void(0);" class="text-red-400 block mt-1">Get Deal<img src="images/right-polygon.svg" alt="#" class="inline-block ml-1" /></a>
+                                </p>
+                            </li>
+                            <li class="flex justify-between text-center items-center border-b px-5 py-4">
+                                <img src="images/cyber-ghost-brand-logo.svg" alt="#" />
+                                <p class="text-xs px-5">
+                                    82% off 2yr plan
+                                    <a href="javascript:void(0);" class="text-red-400 block mt-1">Get Deal<img src="images/right-polygon.svg" alt="#" class="inline-block ml-1" /></a>
+                                </p>
+                            </li>
+                            <li class="flex justify-between text-center items-center px-5 py-4">
+                                <img src="images/private-internet-brand-logo.svg" alt="#" />
+                                <p class="text-xs px-5">
+                                    Save 49%
+                                    <a href="javascript:void(0);" class="text-red-400 block mt-1">Get Deal<img src="images/right-polygon.svg" alt="#" class="inline-block ml-1" /></a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="mb-3 font-medium">Table of Contents:</p>
+                    <ul id="v-tabs" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll h-96">
+                        <li>
+                            <a href="#tab1" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
+                                Introduction
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
+                                Access
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                Prohibited use
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Termination
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Disclaimers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab6" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Limitation of Liability
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab7" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                User submissions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab8" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Privacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab9" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Links to third-party websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab10" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Procedure for making claims of infringement
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab11" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Electronic communications
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab12" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                General
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-3/4 lg:pl-16 text-left">
+                    <!-- right content section start -->
+
+                    <div class="right_content_sec">
+                        <div class="border rounded-2xl py-5 px-10 border-red-400 shadow-lg mb-7">
+                            <div class="relative">
+                                <div class="absolute -left-5 top-1 w-4 h-4  invisible md:visible"><img src="images/bulb-icon.svg" /></div>
+                                <h6 class="font-medium text-lg mb-5">Too busy for the full read? Here’s the BEST VPN SERVICE for 2023</h6>
+                                <p class="text-base mb-1">ExpressVPN - The fastest VPN available. It’s super secure, easy to use, great for streaming.</p>
+                                <a href="javascript:void(0);" class="text-red-400 underline text-base font-medium">Get 49% off with this special discount.</a>
+                            </div>
+                        </div>
+                        <p>
+                            <b>Finding a great all-around VPN can feel impossible.</b> Some VPNs have reliable servers for streaming but lack strong security features. Others are super secure but slow your connection down so much that even browsing becomes frustrating. Not to mention the dozens of untrustworthy VPNs that track your online movements or fail to encrypt your traffic properly.
+                        </p>
+                        <br>
+                        <p>
+                            To save you time and hassle, <b>our team of cybersecurity experts across the globe spend months testing over 300 VPN services to determine which ones are the best overall.</b>
+                        </p>
+                        <br>
+                        <p>
+                            These VPNs all have global server coverage and are great for accessing geoblocked content. They also secure your connection without slowing you down and keep your online activity private. Some of them are even powerful enough to work in countries with strict internet censorship.
+                        </p>
+                        <br>
+                        <p>
+                            <b>TLDR: Our top choice is ExpressVPN,</b> thanks to its industry-leading security features and impressive speeds for streaming, torrenting, and gaming. But it also stands out for its strong commitment to keeping your online activity private.
+                        </p>
+                        <br>
+                        <p>
+                            <b>You can try ExpressVPN risk-free thanks to its 30-day money-back guarantee.</b> It offers 24/7 live chat with a responsive customer support team to assist you with any questions or concerns. If you’re not as impressed as we are, you can easily get a full refund.
+                        </p>
+                        <div class="my-8 text-center">
+                            <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Try Our #1 Recommended VPN</a>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">What is a VPN?</h3>
+                            <p>
+                                A VPN, or Virtual Private Network, is a technology that allows you to connect directly to a remote server. This connection takes place via an encrypted tunnel that protects your <a href="javascript:void(0);" class="text-red-400">Personal Identifiable Information</a> (PII). Most commercial VPNs provide additional protection by concealing your IP address behind an anonymous, untraceable address. The best VPNs not only keep your online browsing hidden from hackers but from government surveillance as well.
+                            </p>
+                            <br>
+                            <p>
+                                The key to online privacy is making sure you’re keeping as much data about your browsing activity under wraps. First, you want your IP address – your device’s unique identifier on the worldwide web – to stay hidden. Second, you want the data you send to the internet to remain secret.
+                            </p>
+                            <p>
+                                Those two things are exactly what virtual private networks, more commonly known as <a href="javascript:void(0);" class="text-red-400">VPNs</a>, do. They hide your IP address behind a VPN server and encrypt your online traffic.
+                            </p>
+                            <p>
+                                Most VPNs, however, are not free. When it comes to choosing which to buy, you should choose one that fits your exact needs. There are VPNs good for day-to-day use, travels, gaming, streaming, and so on. We know, choosing the perfect VPN is not easy. That’s where we come in. We’ve tested dozens of VPNs, and using a methodology we developed, we rated and ranked them to help you narrow down your options.
+                                No matter what type of VPN you’re looking for, there’s going to be a good option for you in this list. Let’s take a closer look.
+                            </p>
+                        </div>
+
+                        <div class="relative mt-4">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">The Best VPN Services of 2023</h3>
+                            <div class="bg-gray-light-200 rounded-2xl p-5">
+                                <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">What Is the Best VPN in September 2023?</h3>
+                                <p class="text-base">Based on our tests of over 150 VPNs, the 10 best VPN services are:</p>
+                                <ul class="space-y-2 text-base my-5">
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">ExpressVPN</a>: Best VPN Overall
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">NordVPN</a>: Most Secure VPN
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">PIA VPN</a>: Best VPN for Privacy & Torrenting
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">Surfshark</a>: Best VPN for GPS Spoofing
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">PrivateVPN</a>: Best VPN for Public WiFi
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">IPVanish</a>: Best VPN for Fire TV Stick & Kodi
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">CyberGhost</a>: Best VPN Free Trial
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">Hide.me</a>: Hide.me: Best VPN for IPv6 Connections
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">Proton VPN</a>: Best Free VPN
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="text-red-400">Windscribe</a>: Unblocks the Most Netflix Regions
+                                    </li>
+                                </ul>
+                                <p class="text-base">
+                                    The best VPN in 2023 is ExpressVPN, with an overall rating of 9.6/10. It’s fast, private, 
+                                    highly-secure, and it outperforms other top VPN services in almost every testing category. ExpressVPN excels at unblocking streaming services, gaming, and ease of use – although it is more expensive than its rivals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="relative mt-4">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Comparison of the Best VPNs</h3>
+                        </div>
+
+                        <div class="relative mt-4">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Taking A Closer Look at the Best VPNs of 2023</h3>
+                            <p>
+                                Our top-rated VPN for general use, and the best VPN for unrestricted streaming and gaming.
+                            </p>
+                            <h4 class="my-3 pl-3 text-xl lg:text-2xl font-medium text-black mb-3">1. ExpressVPN: Best VPN Overall</h4>
+                            <div class="bg-gray-light-200 rounded-lg p-5 relative mt-6 py-7">
+                                <div class="absolute -left-1 -top-1 w-64 h-8 bg-contain" style="background-image: url(images/ranked1.svg); background-repeat: no-repeat;">
+                                </div>
+                                <div class="flex flex-wrap">
+                                    <div class="md:w-3/12 text-center">
+                                        <img src="images/express-vpn-img1.svg" alt="#" />
+                                        <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block my-3">Visit ExpressVPN</a>
+                                        <p class="text-xs"><i class="fa fa-info-circle mr-2"></i>How We Reviews</p>
+                                    </div>
+                                    <div class="lg:w-3/4 md:pl-6">
+                                        <ul class="space-x-3 my-4">
+                                            <li class="items-center">
+                                                <span class="font-medium text-2xl mr-1">ExpressVPN</span>
+                                                <img src="images/vertical-line.svg" alt="#" class="inline-block">
+                                                <span class="text-base relative ml-6 inline-block">Editors Rating: 9.7<span class="text-xs">/10</span>
+                                                <div class="absolute -left-5 top-1 w-4 h-4  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            ExpressVPN is the best all-around VPN our global team of VPN experts has tested, with incredibly fast speeds and strong security.
+                                        </p>
+                                        <div class="flex flex-wrap items-center mt-5">
+                                            <p>Available on:</p>
+                                            <ul class="flex space-x-3 pl-3">
+                                                <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-facebook-square"></i></a></li>
+                                                <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-linkedin"></i></a></li>
+                                                <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-instagram-square"></i></a></li>
+                                                <li><a class="hover:text-red-400" href="javascript:void(0);"><i class="fab fa-twitter-square"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap bg-gray-dark-400">
+                                    <div class="w-1/2">
+                                        <h5 class="font-bold text-green-400 my-4">Pros</h5>
+                                        <ul class="ulList pros_list space-y-2">
+                                            <li class="text-base">
+                                                Consistently fast speeds across any distance
+                                            </li>
+                                            <li class="text-base">
+                                                Unblocks 10 Netflix regions, Disney+, Hulu, Prime Video & more
+                                            </li>
+                                            <li class="text-base">
+                                                No-logs policy, AES-256 encryption & RAM-only servers
+                                            </li>
+                                            <li class="text-base">
+                                                Privacy-friendly British Virgin Islands (BVI) jurisdiction
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <h5 class="font-bold text-green-400 my-4">Cons</h5>
+                                        <ul class="ulList cons_list space-y-2">
+                                            <li class="text-base">
+                                                More expensive than its rivals
+                                            </li>
+                                            <li class="text-base">
+                                                No multi-hop or other advanced features
+                                            </li>
+                                            <li class="text-base">
+                                                Does not support port forwarding
+                                            </li>
+                                            <li class="text-base">
+                                                No split tunneling on macOS
+                                            </li>
+                                            <li class="text-base">
+                                                No Linux graphical user interface (GUI)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-8 text-center">
+                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Try ExpressVPN</a>
+                            </div>
+                            <h4 class="my-3 text-xl lg:text-2xl font-medium text-black mb-3">Best VPN for China</h4>
+                            <p>
+                                China’s government blocks most foreign VPNs outright, but ExpressVPN works flawlessly on the mainland. You don’t even have to tweak any settings or activate a stealth mode, and there’s a separate version of the site that’s still accessible in China (though you’ll have to ask the support staff for the URL before you arrive).
+                            </p>
+                            <div class="flex flex-wrap my-12">
+                                <div class="w-4/5 pr-10">
+                                    <h6 class="text-xl md:text-2xl">Why Trust vpnHunt?</h6>
+                                    <p class="text-base">
+                                        We’re completely independent and focused on VPN software. We’ve spent 150+ years and thousands of hours testing and reviewing VPNs using our unbiased VPN review process to recommend the best ones.
+                                        <br>
+
+                                        Here are some of our key VPN testing statistics:
+                                    </p>
+                                </div>
+                                <div class="w-1/5">
+                                    <img src="images/logo-icon.svg" alt="#" />
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- right content section end -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- terms conditions content section end here -->
+
+    <!-- footer start here -->
+<footer class="bg-fixed bg-cover md:py-16 py-14" style="background-image: url('images/gray-bg.png');">
+    <div class="container mx-auto">
+        <div class="lg:flex justify-between align-middle border-b pb-3">
+            <div class="relative">
+                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+            </div>
+            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
+                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            </ul>
+        </div>
+        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
+            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
+            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
+            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
+        </ul>
+          <div class="lg:flex flex-row-reverse justify-between align-middle">
+            <ul class="lg:flex lg:space-x-4">
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Terms of Use</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Disclaimer</a>
+            </ul>
+            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
+          </div>
+    </div>
+</footer>
+    <!-- footer end here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script>
+    // mobile humburger menu start 
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('navbar-sticky');
+const menuIconOpen = document.getElementById('menu-icon-open');
+const menuIconClose = document.getElementById('menu-icon-close');
+
+mobileMenuButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('open-navbar');
+    menuIconOpen.classList.toggle('hidden');
+    menuIconClose.classList.toggle('hidden');
+});
+// mobile humburger menu end
+
+//top search start here 
+var toggleButton = document.getElementById("top-search");
+  var mainSearch = document.getElementById("main-search");
+  var searchCloseButton = document.getElementById("search-close");
+
+  toggleButton.addEventListener("click", function() {
+    mainSearch.classList.toggle("open-search-form");
+  });
+
+  searchCloseButton.addEventListener("click", function() {
+    mainSearch.classList.remove("open-search-form");
+  });
+  // top search end here 
+
+  // fixed header start here 
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 0) {
+        header.classList.add("fixed-header");
+      } else {
+        header.classList.remove("fixed-header");
+      }
+    });
+});
+// fixed header end here 
+
+$(document).ready(function() {    
+    //  $('#v-tabs li a:not(:first)').addClass('inactive');
+    $('.tab-content').hide();
+    $('.tab-content:nth-child(3)').show();
+    $('#v-tabs li a').click(function(){
+        var t = $(this).attr('href');
+        $('#v-tabs li a').addClass('inactive');        
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');
+        return false;
+    })
+
+    if($(this).hasClass('inactive')){ //this is the start of our condition 
+        $('#v-tabs li a').addClass('inactive');         
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');     
+    }
+});
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vpnHunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="relative">
+        <nav
+            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div class="container">
+                <div class="flex flex-wrap items-center justify-between py-4">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
+                                    aria-current="page">Best VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                            </li>
+                            <li>
+                                <a href="guides.html"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main search start here -->
+        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
+            <form class="flex items-center">   
+                <div class="relative w-full">
+                    <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>   
+                    <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
+                </div>
+                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </form>
+        </div>
+        <!-- main search end here -->
+    </header>
+    <!-- header end here -->
+
+    <!-- top banner start here -->
+    <section class="contact-top-bg bg-center bg-cover pb-10" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
+        <div>
+            <div class="container">
+                <nav class="mb-10 pt-6" aria-label="breadcrumb">
+                    <ol class="flex space-x-2 items-center">
+                        <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
+                        <li class="text-red-400 text-sm" aria-current="page">Disclaimer</li>
+                      </ol>
+                  </nav>
+                    <div class="flex md:flex-row flex-col flex-wrap align-middle content-center relative items-center md:text-left pb-8 pt-3">
+                        <div class="md:w-2/3 w-full">
+                            <h1 class="font-medium text-4xl md:text-5xl text-black mb-6">
+                                Disclaimer
+                            </h1>
+                            <p class="items-center text-sm"><img src="images/check-circle-icon.svg" alt="#" class="inline-block" /> Last Updated Sep 19, 2023</p>
+                        </div>
+                    </div>                   
+            </div>
+          </div>
+    </section>
+    <!-- top banner end here -->
+
+    <!-- page link start -->
+    <section class="page-link mobile-none">
+        <div class="container">
+            <ul class="flex space-x-3 justify-center">
+                <li>
+                    <a href="privacy-policy.html" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="cookies-policy.html" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300">Cookie Policy</a>
+                </li>
+                <li>
+                    <a href="terms-conditions.html" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent duration-300">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="disclaimer.html" class="py-4 px-2 inline-block text-sm font-normal border-b-4 border-transparent active duration-300">Disclaimer</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- page link end -->
+
+    <!-- disclaimer content section start here -->
+    <section class="our-expertise-sec py-8 md:py-14">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col flex-wrap relative lg:justify-evenly pl-0 md:pl-10 lg:pl-0">
+                <div class="lg:w-3/12 rounded-lg relative mb-3 md:mb-4 lg:mb-0 hidden">
+                    <p class="mb-2 md-sm-none">Table of Contents:</p>
+                    <ul id="v-tabs" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll h-96">
+                        <li>
+                            <a href="#tab1" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
+                                Introduction
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
+                                Contact details
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                                What data do we collect and how do we use it
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                How we share your Personal Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                What data is collected on our websites?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab6" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Links to other websites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab7" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Storage and retention of data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab8" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Data security
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab9" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Protecting children’s privacy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab10" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Social media accounts
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab11" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Log files
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab12" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Analytic tools
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab13" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-3/4 lg:pl-16 text-left">
+                    <div class="overview-content">
+                        <div class="relative mt-3">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Disclosure & how this website is funded</h3>
+                            <p>
+                                Our mission has always been to provide open and honest reviews, comparison and consumer information and to put our readers’ interests first, so it’s only fair that we’re open and upfront about how we’re funded. As a business, our challenge is to ensure we put you, our reader, first and provide impartial information that you can trust while still generating revenue by working with advertisers. The best way to explain how we achieve this is by giving you an insight into our methodology.
+                            </p>
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">A word on our methodology</h3>
+                            <p>
+                                When our analysts review a service or recommend a product in an article, they will only do so once they have tested the product or service themselves. If they don’t like it, then they are free to say so, regardless of whether we have an advertiser relationship with that company or not. We’ll never recommend a product we wouldn’t be happy to use ourselves. Unfortunately, some review sites will rate the services they have the best commercial relationships the highest. We’ll never engage in such a practice and would rather pack our bags and go home than compromise our editorial integrity.
+                            </p>
+                            <br>
+                            <p>
+                                When we list a product, service or app in a review or an article, we’ll usually link to it.
+                            </p>
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Advertisers and referral fees</h3>
+                            <p>
+                                Some of these links allow us to earn a referral fee if you, the reader, goes on to sign up for the service, which in turn helps us fund the site. We also post many links to services and websites with which we have no advertiser relationship. If we link to a product or service, it’s because we believe it’s worth taking a look at in the context of the article or review. Once an article or review is completed by one of our analysts, a separate team retrospectively looks at which of these links we can add something called an affiliate tracking code to. This code allows us to earn a referral fee if you go on to make a purchase. To dispel a popular misconception, clicking on a referral link won’t cost you extra if you go on to make a purchase. In some cases, it could actually save you money where we have negotiated special deals for our readers.
+                            </p>
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Hang on, aren’t you pro-privacy and anti-tracking?</h3>
+                            <p>
+                                If referral fees sound like a shady area, it’s not. Many of the world’s biggest brands including Amazon, eBay and <a href="https://performance-partners.apple.com/program-overview" class="text-black underline" target="_blank">Apple</a> have affiliate programs and some of the largest and most respected IT publishers participate in affiliate marketing. As advocates of security and privacy, the word ‘tracking code’ sets off alarm bells, and we’re very conscious about how we use this technology. Our only reason for adding these affiliate links is to track whether you sign up for a service from our referral so we can benefit from it. There’s no purpose beyond that and we’re not looking to invade your privacy with any annoying ads. Of course, once you go on to visit a third party site, it may have its own tracking in place, as most big brands do, but that stipulation exists whether you visit the site via one of our links or not.
+                            </p>
+
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Ownership</h3>
+                            <p>
+                                In late 2021, Comparitech Limited became a part of the Pango group. Pango and its ultimate parent company, WC SACD Holdings Inc. own a number of identity theft protection, VPN, and other cyber security products. Comparitech remains as a UK limited company, operating independently of Pango and with full editorial control. We apply the same objective review process to Pango products or products competitive to Pango products that are used to assess any other product we review. You can see examples of Pango products we have reviewed <a href="https://www.comparitech.com/vpn/reviews/ultravpn-review/" class="text-black underline" target="_blank">here</a> and <a href="https://www.comparitech.com/vpn/reviews/hotspot-shield-review/" class="text-black underline" target="_blank">here</a>.
+                            </p>
+
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">We’d like your support, but the choice is yours</h3>
+                            <p>
+                                Referral fees help support this site and pay for our amazing analysts, writers, developers and web designers. It costs you nothing and we’d really appreciate your support. However, we’re all about choice and if you’d prefer to block any sort of tracking, we’d suggest you install an anti-tracking extension to your browser. There’s a number of free ones available, some of which we cover in our huge list of <a href="https://www.comparitech.com/blog/vpn-privacy/75-free-tools-to-protect-your-privacy-online/" class="text-black underline" target="_blank">free privacy tools</a> (Ghostery is probably your best bet).
+                            </p>
+                            <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Any questions?</h3>
+                            <p>
+                                Head over to our <a href="https://www.comparitech.com/contact/" class="text-black underline" target="_blank">contact page</a> if you have any questions and we’ll be happy to help.
+                            </p>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- disclaimer content section end here -->
+
+    <!-- footer start here -->
+<footer class="bg-fixed bg-cover md:py-16 py-14" style="background-image: url('images/gray-bg.png');">
+    <div class="container mx-auto">
+        <div class="lg:flex justify-between align-middle border-b pb-3">
+            <div class="relative">
+                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+            </div>
+            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
+                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            </ul>
+        </div>
+        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
+            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
+            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
+            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
+        </ul>
+          <div class="lg:flex flex-row-reverse justify-between align-middle">
+            <ul class="lg:flex lg:space-x-4">
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Terms of Use</a>
+                <a href="javascript:void(0);" class="hover:text-red-400 text-xs underline">Disclaimer</a>
+            </ul>
+            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
+          </div>
+    </div>
+</footer>
+    <!-- footer end here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <script>
+    // mobile humburger menu start 
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('navbar-sticky');
+const menuIconOpen = document.getElementById('menu-icon-open');
+const menuIconClose = document.getElementById('menu-icon-close');
+
+mobileMenuButton.addEventListener('click', function () {
+    mobileMenu.classList.toggle('open-navbar');
+    menuIconOpen.classList.toggle('hidden');
+    menuIconClose.classList.toggle('hidden');
+});
+// mobile humburger menu end
+
+//top search start here 
+var toggleButton = document.getElementById("top-search");
+  var mainSearch = document.getElementById("main-search");
+  var searchCloseButton = document.getElementById("search-close");
+
+  toggleButton.addEventListener("click", function() {
+    mainSearch.classList.toggle("open-search-form");
+  });
+
+  searchCloseButton.addEventListener("click", function() {
+    mainSearch.classList.remove("open-search-form");
+  });
+  // top search end here 
+
+  // fixed header start here 
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+      if (window.scrollY > 0) {
+        header.classList.add("fixed-header");
+      } else {
+        header.classList.remove("fixed-header");
+      }
+    });
+});
+// fixed header end here 
+
+$(document).ready(function() {    
+    //  $('#v-tabs li a:not(:first)').addClass('inactive');
+    $('.tab-content').hide();
+    $('.tab-content:nth-child(3)').show();
+    $('#v-tabs li a').click(function(){
+        var t = $(this).attr('href');
+        $('#v-tabs li a').addClass('inactive');        
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');
+        return false;
+    })
+
+    if($(this).hasClass('inactive')){ //this is the start of our condition 
+        $('#v-tabs li a').addClass('inactive');         
+        $(this).removeClass('inactive');
+        $('.tab-content').hide();
+        $(t).fadeIn('slow');     
+    }
+});
+
+
+</script>
+</body>
+
+</html>
