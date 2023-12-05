@@ -54,8 +54,9 @@ body, p{
 .btn-bg-orange-500{
     background-color: #FF6961;
 }
-.btn-bg-orange-500:hover{
+.btn-bg-orange-500:hover, .hover-bg-red:hover{
     background-color: #D8423A;
+    color: #fff;
 }
 .hover-text:hover, .focus-text:focus, .hover-text.active{
     color: #D8423A;
@@ -78,13 +79,13 @@ body, p{
 .btn-bg-green-200{
     background: #5DA283;
 }
-.btn-black-dark{
+.btn-black-dark, .bg-black-dark{
     background: #0D0E10;
 }
-.btn-orange-light-100{
+.btn-orange-light-100, .bg-orange-light-100{
     background: #EC8D71;
 }
-.btn-voilet-light-300{
+.bg-voilet-light-300{
     background: #938CE1;
 }
 .bg-yellow-light-200{
@@ -108,7 +109,7 @@ body, p{
 .bg-green-dark-400{
     background: #5DA283;
 }
-.social-icons li a{
+.social-icons li a, ul li a.twitter-x{
     width: 28px;
     height: 28px;
     display: inline-block;
@@ -137,11 +138,32 @@ body, p{
 .social-icons li a.youtube:hover{
     background-image: url(../dist/images/youtube-hover.svg);
 }
-.social-icons li a.twitter{
-    background-image: url(../dist/images/twitter.svg);
+.social-icons li a.twitter, .fab.fa-twitter-square{
+    background-image: url(../dist/images/twitter-x.svg);
 }
-.social-icons li a.twitter:hover{
-    background-image: url(../dist/images/twitter-hover.svg);
+.social-icons li a.twitter:hover, .fab.fa-twitter-square:hover{
+    background-image: url(../dist/images/twitter-x-hover.svg);
+}
+.fab.fa-twitter, .fab.fa-twitter.no-hover{
+    background-image: url(../dist/images/twitter-x1.svg);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+.fab.fa-twitter-square{
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fab.fa-twitter:hover{
+    background-image: url(../dist/images/twitter-x-hover1.svg);
+}
+.fab.fa-twitter.no-hover{
+    background-image: url(../dist/images/twitter-x1.svg);
+}
+.fab.fa-twitter:before, .fab.fa-twitter-square:before{
+    content: "";;
 }
 .category-btn:hover{
     filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
