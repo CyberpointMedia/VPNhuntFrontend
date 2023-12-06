@@ -91,6 +91,9 @@ body, p{
 .bg-yellow-light-200{
     background: #F1BD6C;
 }
+.bg-gray-light-100{
+    background: #f5f3f3;
+}
 .bg-gray-light-200{
     background: #F0EDED;
 }
@@ -200,6 +203,9 @@ body, p{
 .fixed-header nav{
     background-color: #fff; 
     transition: background-color 0.3s ease-in-out; 
+}
+header.fixed-header .topbar{
+    display: none;
 }
 
 #main-search.open-search-form {

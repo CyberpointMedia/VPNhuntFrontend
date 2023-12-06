@@ -705,10 +705,6 @@ video {
   top: 0.75rem;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -2049,6 +2045,10 @@ video {
 
   .lg\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
   }
 
   .lg\:text-2xl {
