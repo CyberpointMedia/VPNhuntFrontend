@@ -112,7 +112,7 @@
     <section class="our-expertise-sec lg:pt-5 lg:pb-10">
         <div class="container">
             <div class="flex lg:flex-row flex-col flex-wrap relative items-start pl-0 md:pl-10 lg:pl-0">
-                <div class="lg:w-3/12 rounded-lg relative bg-gray-light-200 mb-3 md:mb-4 lg:mb-0">
+                <div class="lg:w-3/12 rounded-lg bg-gray-light-200 mb-3 md:mb-4 lg:mb-0 sticky">
                     <img class="" src="images/team-member10.svg" alt="#">
 
                     <ul id="v-tabs" class="flex-column text-sm font-medium bg-white border border-t-0 py-4">
@@ -122,22 +122,22 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
                                 Research
                             </a>
                         </li>
                         <li>
-                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
                                 Public Policy & Academia
                             </a>
                         </li>
                         <li>
-                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
                                 Experience
                             </a>
                         </li>
                         <li>
-                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
+                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
                                 Education
                             </a>
                         </li>
@@ -157,8 +157,7 @@
 
                     <!-- tab content start -->
                     <div class="vertical-tb-content mt-10">
-                        <!-- tab content 1 start -->
-                        <div id="tab1" class="text-medium w-full tab-content">
+                        <div class="text-medium w-full tab-content">
                             <div class="overview-content relative">
                                 <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
                                 <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Overiew</h3>
@@ -177,12 +176,10 @@
                                         <br>
                                         In the video below, you can see Simon explaining VPN services — and their ability to fight censorship — in an interview on Euronews:
                                     </p>
-                            </div>
-                        </div>
 
-                        <!-- tab content 2 start -->
-                        <div id="tab2" class="text-medium w-full tab-content">
-                            <div class="research-content relative">
+                            </div>
+
+                            <div class="research-content relative mt-4">
                                 <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
                                 <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Research</h3>
                                     <p>
@@ -206,11 +203,8 @@
                                         </li>
                                     </ul>
                             </div>
-                        </div>
 
-                        <!-- tab content 3 start -->
-                        <div id="tab3" class="text-medium w-full tab-content">
-                            <div class="academia-content relative">
+                            <div class="academia-content relative mt-4">
                                 <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
                                 <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Academia</h3>
                                     <p>
@@ -235,11 +229,8 @@
                                         </li>
                                     </ul>
                             </div>
-                        </div>
 
-                        <!-- tab content 4 start -->
-                        <div id="tab4" class="text-medium w-full tab-content">
-                            <div class="experience-content relative">
+                            <div class="experience-content relative mt-4">
                                 <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
                                 <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Experience</h3>
                                     <p>
@@ -264,11 +255,8 @@
                                         His research findings have also received extensive coverage in major foreign-language publications all over the world, such as Deutsche Welle, CNet Japan, Repubblica, Le Figaro, ZDNet France, PC Magazin and CNN Espanol.
                                     </p>
                             </div>
-                        </div>
 
-                        <!-- tab content 5 start -->
-                        <div id="tab5" class="text-medium w-full tab-content">
-                            <div class="education-content relative">
+                            <div class="education-content relative mt-4">
                                 <div class="absolute -left-8 top-1 w-6 h-6 invisible md:visible"><img src="images/logo-icon.svg" /></div>
                                 <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Education</h3>
                                     <p>
@@ -277,8 +265,8 @@
                                         <br>Media Inquiries: Please contact Simon at <a href="javascript:void(0);" class="text-red-400 hover-text">simon@vpnhunt.com</a> or visit our <a href="javascript:void(0);" class="text-red-400 hover-text">Press Room</a> for more information.
                                     </p>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                     <!-- tab content end -->
 
@@ -443,29 +431,6 @@ var toggleButton = document.getElementById("top-search");
     });
 });
 // fixed header end here 
-
-$(document).ready(function() {    
-    $('#v-tabs li a:not(:first)').addClass('inactive');
-    $('.tab-content').hide();
-    $('.tab-content:first').show();
-    $('#v-tabs li a').click(function(){
-        var t = $(this).attr('href');
-        $('#v-tabs li a').addClass('inactive');        
-        $(this).removeClass('inactive');
-        $('.tab-content').hide();
-        $(t).fadeIn('slow');
-        return false;
-    })
-
-    if($(this).hasClass('inactive')){ //this is the start of our condition 
-        $('#v-tabs li a').addClass('inactive');         
-        $(this).removeClass('inactive');
-        $('.tab-content').hide();
-        $(t).fadeIn('slow');    
-    }
-});
-
-
 </script>
 </body>
 

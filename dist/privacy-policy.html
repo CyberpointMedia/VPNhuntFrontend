@@ -140,72 +140,47 @@
     <section class="our-expertise-sec lg:py-14">
         <div class="container">
             <div class="flex lg:flex-row flex-col flex-wrap relative items-start pl-0 md:pl-10 lg:pl-0">
-                <div class="lg:w-3/12 rounded-lg relative mb-3 md:mb-4 lg:mb-0">
+                <div class="lg:w-3/12 rounded-lg mb-3 md:mb-4 lg:mb-0 sticky">
                     <p class="mb-2 md-sm-none">Table of Contents:</p>
-                    <ul id="v-tabs" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll h-96">
+                    <ul id="v-tabs" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll">
                         <li>
                             <a href="#tab1" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
-                                Introduction
+                                Information We Collect
                             </a>
                         </li>
                         <li>
                             <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
-                                Contact details
+                                NordVPN Pros & Cons
                             </a>
                         </li>
                         <li>
                             <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
-                                What data do we collect and how do we use it
+                                Site Analytics
                             </a>
                         </li>
                         <li>
                             <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                How we share your Personal Information
+                                Browser Data
                             </a>
                         </li>
                         <li>
                             <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                What data is collected on our websites?
+                                Cookies and similar technologies
                             </a>
                         </li>
                         <li>
                             <a href="#tab6" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Links to other websites
+                                Links to Other Websites
                             </a>
                         </li>
                         <li>
                             <a href="#tab7" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Storage and retention of data
+                                Changes
                             </a>
                         </li>
                         <li>
                             <a href="#tab8" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Data security
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab9" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Protecting children’s privacy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab10" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Social media accounts
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab11" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Log files
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab12" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Analytic tools
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab13" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Contact us
+                                How to Contact Us
                             </a>
                         </li>
                     </ul>
@@ -213,18 +188,7 @@
                 <div class="lg:w-3/4 lg:pl-16 text-left">
                     <!-- tab content start -->
                     <div class="vertical-tb-content mt-10">
-                        <!-- tab content 1 start -->
-                        <div id="tab1" class="text-medium w-full tab-content md-sm-none">
-                            tab1
-                        </div>
-                        
-                        <!-- tab content 2 start -->
-                        <div id="tab2" class="text-medium w-full tab-content md-sm-none">
-                            tab 2
-                        </div>
-
-                        <!-- tab content 3 start -->
-                        <div id="tab3" class="text-medium w-full tab-content">
+                        <div class="text-medium w-full tab-content">
                             <div class="overview-content">
                                 <p>
                                     Welcome to <b>vpnHunt</b> Privacy Policy.
@@ -458,17 +422,6 @@
                                 </div>     
                             </div>
                         </div>
-
-                        <!-- tab content 4 start -->
-                        <div id="tab4" class="text-medium w-full tab-content md-sm-none">
-                           tab 4
-                        </div>
-
-                        <!-- tab content 5 start -->
-                        <div id="tab5" class="text-medium w-full tab-content md-sm-none">
-                            tab 5
-                        </div>
-
                     </div>
                     <!-- tab content end -->
 
@@ -560,26 +513,26 @@ var toggleButton = document.getElementById("top-search");
 });
 // fixed header end here 
 
-$(document).ready(function() {    
-    //  $('#v-tabs li a:not(:first)').addClass('inactive');
-    $('.tab-content').hide();
-    $('.tab-content:nth-child(3)').show();
-    $('#v-tabs li a').click(function(){
-        var t = $(this).attr('href');
-        $('#v-tabs li a').addClass('inactive');        
-        $(this).removeClass('inactive');
-        $('.tab-content').hide();
-        $(t).fadeIn('slow');
-        return false;
-    })
+// $(document).ready(function() {    
+//     //  $('#v-tabs li a:not(:first)').addClass('inactive');
+//     $('.tab-content').hide();
+//     $('.tab-content:nth-child(3)').show();
+//     $('#v-tabs li a').click(function(){
+//         var t = $(this).attr('href');
+//         $('#v-tabs li a').addClass('inactive');        
+//         $(this).removeClass('inactive');
+//         $('.tab-content').hide();
+//         $(t).fadeIn('slow');
+//         return false;
+//     })
 
-    if($(this).hasClass('inactive')){ //this is the start of our condition 
-        $('#v-tabs li a').addClass('inactive');         
-        $(this).removeClass('inactive');
-        $('.tab-content').hide();
-        $(t).fadeIn('slow');     
-    }
-});
+//     if($(this).hasClass('inactive')){ //this is the start of our condition 
+//         $('#v-tabs li a').addClass('inactive');         
+//         $(this).removeClass('inactive');
+//         $('.tab-content').hide();
+//         $(t).fadeIn('slow');     
+//     }
+// });
 
 
 </script>

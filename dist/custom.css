@@ -378,6 +378,45 @@ video{
 }
 
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f2efef;
+}
+::-webkit-scrollbar-thumb {
+    background: #c0bdbd;
+    border-radius: 50vh;
+    border: 1px solid #f6f7ed;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f2efef;
+}
+::-webkit-scrollbar-thumb {
+    background: #c0bdbd;
+    border-radius: 50vh;
+    border: 1px solid #f6f7ed;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+.sticky{
+    position: sticky;
+    height: 100%;
+    top: 80px;
+    bottom: auto;
+}
+
+
 @media only screen and (min-width: 1536px) {
     .vpnHunt-video{
         bottom: -160px;
