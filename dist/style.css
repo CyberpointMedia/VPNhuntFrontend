@@ -1318,6 +1318,30 @@ video {
   border-color: transparent;
 }
 
+.border-x-neutral-200 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(229 229 229 / var(--tw-border-opacity));
+  border-right-color: rgb(229 229 229 / var(--tw-border-opacity));
+}
+
+.border-x-neutral-50 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(250 250 250 / var(--tw-border-opacity));
+  border-right-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+
+.border-x-neutral-100 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(245 245 245 / var(--tw-border-opacity));
+  border-right-color: rgb(245 245 245 / var(--tw-border-opacity));
+}
+
+.border-x-neutral-300 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(212 212 212 / var(--tw-border-opacity));
+  border-right-color: rgb(212 212 212 / var(--tw-border-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));

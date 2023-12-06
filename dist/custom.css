@@ -301,7 +301,6 @@ button.slick-arrow {
 .comparisons-hover{
     transform: rotate(0deg);
     transition: all 0.5s ease;
-    margin-bottom: 20px;
 }
 .comparisons-hover:hover{
     transform: rotate(-1deg);
