@@ -15,7 +15,7 @@
 <body>
     <!-- header start here -->
     <header class="relative">
-        <div class="topbar py-2 bg-gray-light-100 duration-500">
+        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
             <div class="container">
                 <div class="flex flex-wrap justify-between items-center text-center md:text-left">
                     <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
@@ -197,18 +197,18 @@
                         <div class="flex mb-4">
                             <!-- Country Code Input -->
                             <div class="relative">
-                                <select class="bg-white text-gray-700 text-base appearance-none border border-r-0 p-3 pr-3 rounded rounded-tr-none rounded-br-none focus:shadow-none focus:outline-none">
+                                <select class="bg-white text-base appearance-none border border-r-0 p-3 pr-3 rounded rounded-tr-none rounded-br-none focus:shadow-none focus:outline-none">
                                     <option value="+1">USA</option>
                                     <option value="+44">UK</option>
                                     <option value="+91">India</option>
                                 </select>
-                                <div class="absolute inset-y-0 -right-1 flex items-center px-2 pointer-events-none">
+                                <div class="absolute inset-y-0 -right-2 flex items-center px-2 pointer-events-none">
                                     <img src="images/down-arrow.svg" alt="#" />
                                 </div>
                             </div>
                 
                             <!-- Phone Number Input -->
-                            <input type="tel" class="flex-1 p-3 text-base text-gray-700 border rounded rounded-tl-none rounded-bl-none appearance-none focus:shadow-none focus:outline-none" placeholder="+1 (555) 000-0000" required>
+                            <input type="tel" class="flex-1 p-3 text-base text-gray-700 border border-l-0 rounded rounded-tl-none rounded-bl-none appearance-none focus:shadow-none focus:outline-none" placeholder="+1 (555) 000-0000" required>
                         </div>
 
                         <div class="mb-4">
@@ -413,6 +413,7 @@ mobileMenuButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('open-navbar');
     menuIconOpen.classList.toggle('hidden');
     menuIconClose.classList.toggle('hidden');
+    $("nav").toggleClass("drop-shadow-md");
 });
 // mobile humburger menu end
 
@@ -433,12 +434,15 @@ var toggleButton = document.getElementById("top-search");
   // fixed header start here 
   document.addEventListener("DOMContentLoaded", function() {
     var header = document.querySelector("header");
+    var topbar = document.getElementById("topbar");
 
     window.addEventListener("scroll", function() {
       if (window.scrollY > 0) {
         header.classList.add("fixed-header");
+        topbar.classList.add('hidden');
       } else {
         header.classList.remove("fixed-header");
+        topbar.classList.remove('hidden');
       }
     });
 });

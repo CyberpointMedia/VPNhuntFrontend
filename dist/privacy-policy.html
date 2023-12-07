@@ -15,7 +15,7 @@
 <body>
     <!-- header start here -->
     <header class="relative">
-        <div class="topbar py-2 bg-gray-light-100 duration-500">
+        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
             <div class="container">
                 <div class="flex flex-wrap justify-between items-center text-center md:text-left">
                     <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
@@ -490,6 +490,7 @@ mobileMenuButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('open-navbar');
     menuIconOpen.classList.toggle('hidden');
     menuIconClose.classList.toggle('hidden');
+    $("nav").toggleClass("drop-shadow-md");
 });
 // mobile humburger menu end
 
@@ -510,39 +511,19 @@ var toggleButton = document.getElementById("top-search");
   // fixed header start here 
   document.addEventListener("DOMContentLoaded", function() {
     var header = document.querySelector("header");
+    var topbar = document.getElementById("topbar");
 
     window.addEventListener("scroll", function() {
       if (window.scrollY > 0) {
         header.classList.add("fixed-header");
+        topbar.classList.add('hidden');
       } else {
         header.classList.remove("fixed-header");
+        topbar.classList.remove('hidden');
       }
     });
 });
 // fixed header end here 
-
-// $(document).ready(function() {    
-//     //  $('#v-tabs li a:not(:first)').addClass('inactive');
-//     $('.tab-content').hide();
-//     $('.tab-content:nth-child(3)').show();
-//     $('#v-tabs li a').click(function(){
-//         var t = $(this).attr('href');
-//         $('#v-tabs li a').addClass('inactive');        
-//         $(this).removeClass('inactive');
-//         $('.tab-content').hide();
-//         $(t).fadeIn('slow');
-//         return false;
-//     })
-
-//     if($(this).hasClass('inactive')){ //this is the start of our condition 
-//         $('#v-tabs li a').addClass('inactive');         
-//         $(this).removeClass('inactive');
-//         $('.tab-content').hide();
-//         $(t).fadeIn('slow');     
-//     }
-// });
-
-
 </script>
 </body>
 

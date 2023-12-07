@@ -15,7 +15,7 @@
 <body>
     <!-- header start here -->
     <header class="relative">
-        <div class="topbar py-2 bg-gray-light-100 duration-500">
+        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
             <div class="container">
                 <div class="flex flex-wrap justify-between items-center text-center md:text-left">
                     <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
@@ -245,6 +245,7 @@ mobileMenuButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('open-navbar');
     menuIconOpen.classList.toggle('hidden');
     menuIconClose.classList.toggle('hidden');
+    $("nav").toggleClass("drop-shadow-md");
 });
 // mobile humburger menu end
 
@@ -262,15 +263,18 @@ var toggleButton = document.getElementById("top-search");
   });
   // top search end here 
 
-  // fixed header start here 
-  document.addEventListener("DOMContentLoaded", function() {
+ // fixed header start here 
+ document.addEventListener("DOMContentLoaded", function() {
     var header = document.querySelector("header");
+    var topbar = document.getElementById("topbar");
 
     window.addEventListener("scroll", function() {
       if (window.scrollY > 0) {
         header.classList.add("fixed-header");
+        topbar.classList.add('hidden');
       } else {
         header.classList.remove("fixed-header");
+        topbar.classList.remove('hidden');
       }
     });
 });

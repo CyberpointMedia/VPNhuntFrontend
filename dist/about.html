@@ -15,7 +15,7 @@
 <body>
     <!-- header start here -->
     <header class="relative">
-        <div class="topbar py-2 bg-gray-light-100 duration-500">
+        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
             <div class="container">
                 <div class="flex flex-wrap justify-between items-center text-center md:text-left">
                     <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
@@ -127,7 +127,7 @@
                         </p>
                     </div>
                     <div class="lg:w-1/3 w-full">
-                        <img src="images/logo-icon.svg" alt="#" class="w-80" />
+                        <img src="images/logo-icon.svg" alt="#" />
                     </div>
                 </div>                  
             </div>
@@ -155,26 +155,26 @@
             </div>
             <div class="flex lg:flex-row flex-col flex-wrap content-center relative items-center">
                 <div class="lg:w-2/4 w-full text-right hidden md:block">
-                    <img class="lg:w-5/6 inline-block lg:-mr-48" src="images/expertise.svg" alt="#" />
+                    <img class="inline-block lg:-mr-28" src="images/expertise.svg" alt="#" />
                 </div>
-                <div class="lg:w-2/4 w-full content-center lg:absolute right-0 bottom-0 lg:pl-24">
+                <div class="lg:w-2/4 w-full content-center lg:absolute right-0 bottom-0 lg:pl-0">
                     <div class="grid grid-cols-2 gap-0">
-                        <div class="lg:px-8 px-4 pt-4 lg:pt-8 lg:pb-24 pb-28 w-full rounded-tl-2xl relative bg-gray-light-200 overflow-hidden">
+                        <div class="lg:px-8 px-4 pt-4 md:pt-8 lg:pb-36 pb-28 w-full rounded-tl-2xl relative bg-gray-light-200 overflow-hidden">
                             <div class="absolute -right-5 -bottom-4 w-28 h-40 bg-contain bg-no-repeat" style="background-image: url(images/bg-shape1.svg);"></div>
                             <p class="font-bold text-4xl md:text-5xl mb-2">35+</p>
                             <p class="text-sm md:text-base">VPNs Tested</p>
                         </div>
-                        <div class="lg:px-8 px-4 lg:pt-24 pt-28 pb-6 w-full relative text-white bg-green-dark-500 overflow-hidden">
-                            <div class="absolute -left-6 -top-14 w-36 h-36 bg-contain bg-no-repeat" style="background-image: url(images/bg-shape2.svg);"></div>
+                        <div class="lg:px-8 px-4 lg:pt-36 pt-28 w-full relative text-white bg-green-dark-500 overflow-hidden">
+                            <div class="absolute -left-6 -top-6 w-36 h-36 bg-contain bg-no-repeat" style="background-image: url(images/bg-shape2.svg);"></div>
                             <p class="font-bold text-4xl md:text-5xl mb-2">$40k</p>
                             <p class="text-sm md:text-base">Money Invested Of Testing</p>
                         </div>
-                        <div class="lg:px-8 px-4 lg:pt-32 pt-28 w-full relative text-white bg-blue-dark-400 overflow-hidden">
+                        <div class="lg:px-8 px-4 lg:pt-36 pt-28 w-full relative text-white bg-blue-dark-400 overflow-hidden">
                             <div class="absolute -left-10 -top-3 w-44 h-24 bg-contain bg-no-repeat" style="background-image: url(images/bg-shape3.svg);"></div>
                             <p class="font-bold text-4xl md:text-5xl mb-2">16k+</p>
-                            <p class="text-sm md:text-base mb-4">Total Hours of Testing</p>
+                            <p class="text-sm md:text-base">Total Hours of Testing</p>
                         </div>
-                        <div class="lg:px-8 px-4 pt-4 md:pt-8 lg:pb-24 pb-28 w-full relative" style="background-image: url(images/bg-shape4.svg); background-repeat: no-repeat; background-size: cover;">
+                        <div class="lg:px-8 px-4 pt-4 md:pt-8 lg:pb-32 pb-28 w-full relative" style="background-image: url(images/bg-shape4.svg); background-repeat: no-repeat; background-size: cover;">
                             <p class="font-bold text-4xl md:text-5xl mb-2">100k+</p>
                             <p class="text-sm md:text-base">Happy Customers From Our Sites</p>
                         </div>
@@ -215,7 +215,7 @@
        <div class="container mx-auto">
         <div class="flex lg:flex-row flex-col flex-wrap align-middle content-center relative items-center">
             <div class="lg:w-2/3 w-full content-center">
-                <h4 class="font-bold text-2xl md:text-3xl">VPN Testing Methodology</h4>
+                <h2 class="font-medium text-3xl md:text-4xl text-black">VPN Testing Methodology</h2>
                 <p class="mt-5">
                     We believe in transparency and integrity. We test each of the VPNs ourselves, and while we do like some more than others, we’re not in love with any. They broke our hearts with those 70% off deals.
                 </p>
@@ -238,7 +238,7 @@
     <!-- vpnHunt methodology end -->
 
     <!-- vpnHunt team section start -->
-    <section class="team-sec md:py-16 py-14 bg-fixed bg-cover" style="background-image: url('images/gray-bg.png');">
+    <section class="team-sec md:py-16 py-14 bg-gray-light-200">
         <div class="container">
             <div class="mx-auto max-w-screen-md text-center content-center">
                 <h2 class="font-medium text-3xl md:text-4xl text-black">
@@ -250,7 +250,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-8 items-center content-center justify-center">
                     <!-- team member 1 -->
                     <div class="py-5 px-4">
-                        <div class="rounded-lg pt-8 relative bg-white">
+                        <div class="rounded-lg pt-8 relative bg-white-100">
                             <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"></a>
                             <img src="images/team-member1.svg" alt="#" />
                         </div>
@@ -265,7 +265,7 @@
 
                     <!-- team member 2 -->
                     <div class="py-5 px-4">
-                        <div class="rounded-lg pt-8 relative bg-white">
+                        <div class="rounded-lg pt-8 relative bg-white-100">
                             <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"></a>
                             <img src="images/team-member2.svg" alt="#" />
                         </div>
@@ -280,7 +280,7 @@
 
                     <!-- team member 3 -->
                     <div class="py-5 px-4">
-                        <div class="rounded-lg pt-8 relative bg-white">
+                        <div class="rounded-lg pt-8 relative bg-white-100">
                             <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"></a>
                             <img src="images/team-member3.svg" alt="#" />
                         </div>
@@ -373,18 +373,18 @@
                         <div class="flex mb-4">
                             <!-- Country Code Input -->
                             <div class="relative">
-                                <select class="bg-white text-gray-700 text-base appearance-none border border-r-0 p-3 pr-3 rounded rounded-tr-none rounded-br-none focus:shadow-none focus:outline-none">
+                                <select class="bg-white text-base appearance-none border border-r-0 p-3 pr-3 rounded rounded-tr-none rounded-br-none focus:shadow-none focus:outline-none">
                                     <option value="+1">USA</option>
                                     <option value="+44">UK</option>
                                     <option value="+91">India</option>
                                 </select>
-                                <div class="absolute inset-y-0 -right-1 flex items-center px-2 pointer-events-none">
+                                <div class="absolute inset-y-0 -right-2 flex items-center px-2 pointer-events-none">
                                     <img src="images/down-arrow.svg" alt="#" />
                                 </div>
                             </div>
                 
                             <!-- Phone Number Input -->
-                            <input type="tel" class="flex-1 p-3 text-base text-gray-700 border rounded rounded-tl-none rounded-bl-none appearance-none focus:shadow-none focus:outline-none" placeholder="+1 (555) 000-0000" required>
+                            <input type="tel" class="flex-1 p-3 text-base text-gray-700 border border-l-0 rounded rounded-tl-none rounded-bl-none appearance-none focus:shadow-none focus:outline-none" placeholder="+1 (555) 000-0000" required>
                         </div>
 
                         <div class="mb-4">
@@ -457,6 +457,7 @@ mobileMenuButton.addEventListener('click', function () {
     mobileMenu.classList.toggle('open-navbar');
     menuIconOpen.classList.toggle('hidden');
     menuIconClose.classList.toggle('hidden');
+    $("nav").toggleClass("drop-shadow-md");
 });
 // mobile humburger menu end
 
@@ -477,12 +478,15 @@ var toggleButton = document.getElementById("top-search");
   // fixed header start here 
   document.addEventListener("DOMContentLoaded", function() {
     var header = document.querySelector("header");
+    var topbar = document.getElementById("topbar");
 
     window.addEventListener("scroll", function() {
       if (window.scrollY > 0) {
         header.classList.add("fixed-header");
+        topbar.classList.add('hidden');
       } else {
         header.classList.remove("fixed-header");
+        topbar.classList.remove('hidden');
       }
     });
 });
