@@ -1177,11 +1177,10 @@ var toggleButton = document.getElementById("top-search");
     });
 });
 // fixed header end here 
-$(document).ready(function () {
-    $('.accordion-toggle').click(function(){
-        var self = $(this).parent();
-        self.toggleClass("collapsed");
-        self.next(".accordion-content").toggleClass("hidden");
+$(document).ready(function () {    
+    $(".accordion-toggle").click(function(){
+        var parentElement = $(this).parent();
+        parentElement.toggleClass("collapsed").siblings().removeClass("collapsed");
     });
 });
 
