@@ -433,12 +433,12 @@ video{
 }
 @media only screen and (min-width: 1280px) and (max-width: 1366px) {
     .about-top-bg {
-        background-position: -160px -150px;
+        background-position: -160px -40px;
     }
 }
 @media only screen and (min-width: 1366px) {
     .about-top-bg {
-        background-position: -160px -230px;
+        background-position: -160px -80px;
     }
 }
 @media (min-width: 1200px) {
@@ -448,7 +448,7 @@ video{
 }
 @media only screen and (min-width: 1600px) {
     .about-top-bg {
-        background-position: -160px -270px;
+        background-position: -160px -130px;
     }
 }
 
