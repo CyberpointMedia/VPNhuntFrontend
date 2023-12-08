@@ -442,6 +442,10 @@ header.fixed-header{
 video::-webkit-media-controls {
     display: none;
   }
+.author_overview ul li.active a, .author_overview ul li:hover a{
+    background: #F5F3F3;
+    font-weight: 400 !important;
+}
 
 @media only screen and (min-width: 1536px) {
     .vpnHunt-video{
