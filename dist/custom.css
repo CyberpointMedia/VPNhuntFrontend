@@ -426,6 +426,22 @@ header.fixed-header{
     -webkit-transition: transform 500ms ease, background 500ms ease;
     top: -70px;
 }
+#table-of-contents ul li a {
+    color: var(--primary-black, #0D0E10);
+    font-size: 14px;
+    width: 100%;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-left: 4px solid transparent;
+}
+#table-of-contents ul li.active a, #table-of-contents ul li:hover a {
+    border-color: #E71D1D;
+    font-weight: 600;
+}
+video::-webkit-media-controls {
+    display: none;
+  }
 
 @media only screen and (min-width: 1536px) {
     .vpnHunt-video{

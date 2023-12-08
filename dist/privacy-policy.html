@@ -101,16 +101,16 @@
     <!-- header end here -->
 
     <!-- top banner start here -->
-    <section class="contact-top-bg bg-center bg-cover pb-10" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
+    <section class="contact-top-bg bg-center bg-cover pb-10 md:pb-28" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
         <div>
             <div class="container">
-                <nav class="mb-10 pt-6" aria-label="breadcrumb">
+                <nav class="mb-20 pt-6" aria-label="breadcrumb">
                     <ol class="flex space-x-2 items-center">
                         <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
                         <li class="text-red-400 text-sm" aria-current="page">Privacy Policy</li>
                       </ol>
                   </nav>
-                    <div class="flex md:flex-row flex-col flex-wrap align-middle content-center relative items-center md:text-left pb-8 pt-3">
+                    <div class="flex md:flex-row flex-col flex-wrap align-middle content-center relative items-center md:text-left">
                         <div class="md:w-2/3 w-full">
                             <h1 class="font-medium text-4xl md:text-5xl text-black mb-6">
                                 Privacy Policy
@@ -150,52 +150,11 @@
             <div class="flex lg:flex-row flex-col flex-wrap relative items-start pl-0 md:pl-10 lg:pl-0">
                 <div class="lg:w-3/12 rounded-lg mb-3 md:mb-4 lg:mb-0 sticky">
                     <p class="mb-2 md-sm-none">Table of Contents:</p>
-                    <ul id="v-tabs" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll">
-                        <li>
-                            <a href="#tab1" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
-                                Information We Collect
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab2" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive" aria-current="page">
-                                NordVPN Pros & Cons
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab3" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent">
-                                Site Analytics
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab4" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Browser Data
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab5" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Cookies and similar technologies
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab6" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Links to Other Websites
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab7" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                Changes
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab8" class="inline-flex items-center px-4 py-2 text-black text-sm w-full bg-transparent border-l-4 border-transparent inactive">
-                                How to Contact Us
-                            </a>
-                        </li>
-                    </ul>
+                    <div id="table-of-contents" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll max-h-80"></div>
                 </div>
                 <div class="lg:w-3/4 lg:pl-16 text-left">
                     <!-- tab content start -->
-                    <div class="vertical-tb-content mt-10">
+                    <div class="vertical-tb-content mt-1">
                         <div class="text-medium w-full tab-content">
                             <div class="overview-content">
                                 <p>
@@ -221,9 +180,9 @@
                                         This is a very important policy page and we hope you will read it carefully.
                                     </p>
                                 </p>
-                                <div class="relative mt-3">
+                                <div class="relative">
                                     <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
-                                    <h3 class="text-2xl lg:text-3xl font-medium text-black mb-3">Information We Collect</h3>
+                                    <h3 class="text-2xl lg:text-3xl font-medium text-black my-5">Information We Collect</h3>
                                     <p>
                                         We do not ask you or anyone else to give us any personal information in order to use vpnHunt.
                                         <br>
@@ -236,7 +195,7 @@
                                         <br>
                                         We collect information in the following ways:
                                     </p>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">NordVPN Pros & Cons</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">NordVPN Pros & Cons</h3>
                                     <p>
                                         We give our visitors the option to submit reviews about the VPN providers listed on our Site.
                                         <br>
@@ -247,7 +206,7 @@
                                     <p><b>Personal data collection</b></p>
                                     <br>
                                     <p>Once you submit your review, the following personal information will be collected (exactly as submitted):–</p>
-                                    <ul class="my-3 space-y-3 list-disc pl-7">
+                                    <ul class="my-3 space-y-2 list-disc pl-7">
                                         <li>Name</li>
                                         <li>Email address</li>
                                     </ul>
@@ -270,7 +229,7 @@
                                     <p>
                                         We will only transfer your submitted personal data outside of the EEA if:
                                     </p>
-                                    <ul class="my-3 space-y-3 list-disc pl-7">
+                                    <ul class="mb-5 space-y-1 list-disc pl-7">
                                         <li>
                                             you have won a prize, and
                                         </li>
@@ -310,11 +269,14 @@
                                         We may also ask if you would like to be contacted to participate in future tests. If you give us consent to do so, your email address will be added to our ‘User Testing’ email list.
                                         If at any point you wish to have your email address removed from this list, and permanently purged from our records, please email your request to hello@vpnHunt.com
                                     </p>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Site Analytics</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">Site Analytics</h3>
                                     <p>
                                         Every time anyone visits our Site, we collect anonymised information about that visit. Like most big websites, we do this through Google Analytics software to better understand how people use our site. While we do not use Google Analytics to collect any personally identifying information (such as name or address), we do collect the following kinds of information:
                                     </p>
-                                    <ul class="my-3 space-y-3 list-disc pl-7">
+                                    <ul class="my-5 space-y-1 list-disc pl-7">
+                                        <li>
+                                            The pages you visit on vpnHUnt.com
+                                        </li>
                                         <li>
                                             How long you spend on each page of our Site
                                         </li>
@@ -340,7 +302,7 @@
                                         <br>
                                         This anonymized analytics information is stored behind secure log-ins that can only be accessed by PrivacyCo employees using their official credentials.
                                     </p>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Browser Data</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">Browser Data</h3>
                                     <p>
                                         When you visit our Site, we may collect attributes about the configuration of your web browser and operating system. We store this data anonymously. We only collect information that is reported by your web browser. No personally-identifying information is collected from your device.
                                     </p>
@@ -348,7 +310,7 @@
                                     <p>
                                         The specific information we collect includes:
                                     </p>
-                                    <ul class="my-3 space-y-3 list-disc pl-7">
+                                    <ul class="mt-5 space-y-1 list-disc pl-7">
                                         <li>
                                             Information about your browser, e.g. vendor and product
                                         </li>
@@ -386,7 +348,7 @@
                                             The timezone your device is configured to use
                                         </li>
                                     </ul>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Cookies and similar technologies</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">Cookies and similar technologies</h3>
                                     <p>
                                         Like most websites, vpnHunt puts small files (known as ‘cookies’) onto your computer to collect information about how you browse our Site.
                                         <br>
@@ -413,14 +375,14 @@
                                         <br>
                                         This privacy policy only applies to this website, and doesn’t cover other sites that we link to. If you go to another website, read the privacy policy on that website to find out what it does with your information.
                                     </p>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">Changes</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">Changes</h3>
                                     <p>
                                         We may, from time to time, update this Privacy Policy to reflect any changes to our privacy practices in accordance with changes to legislation, best practice or enhancements to vpnHunt. We will let you know what these changes are by posting them to this page, but it is your responsibility as a user to make sure that you are aware of them, by checking for any changes on a regular basis.
                                         <br>
                                         <br>
                                         Changes will become effective as soon as they are posted.
                                     </p>
-                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-3">How to Contact Us</h3>
+                                    <h3 class="text-xl lg:text-2xl font-medium text-black my-5">How to Contact Us</h3>
                                     <p>
                                         vpnHunt.com is owned and operated by PrivacyCo. If you have any questions about our cookies or this policy, please contact us at hello@vpnhunt.com and we will get back to you within two working days.
                                         <br>
@@ -480,6 +442,31 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   
   <script>
+    // Function to add IDs to headings and generate table of contents
+    function generateTableOfContents() {
+            const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
+            const tocElement = document.getElementById('table-of-contents');
+
+            let tocHTML = '<ul>';
+
+            headings.forEach((heading, index) => {
+                if (!heading.id) {
+                    heading.id = `heading-${index + 1}`;
+                }
+
+                const headingText = heading.textContent;
+                const headingId = heading.id;
+                tocHTML += `<li><a href="#${headingId}">${headingText}</a></li>`;
+            });
+
+            tocHTML += '</ul>';
+            tocElement.innerHTML = tocHTML;
+        }
+
+        // Call the function when the content is loaded
+        document.addEventListener('DOMContentLoaded', generateTableOfContents);
+        
+
     // mobile humburger menu start 
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('navbar-sticky');
@@ -524,6 +511,15 @@ var toggleButton = document.getElementById("top-search");
     });
 });
 // fixed header end here 
+
+// table of contents active class
+$(document).ready(function () { 
+    $('#table-of-contents li:nth-child(3)').addClass('active');   
+    $("#table-of-contents li a").click(function(){
+        var parentElement = $(this).parent();
+        parentElement.toggleClass("active").siblings().removeClass("active");
+    });
+});
 </script>
 </body>
 
