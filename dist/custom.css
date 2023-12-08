@@ -230,8 +230,8 @@ ul.slick-dots {
     position: absolute;
     width: 100%;
     left: 50%;
-    bottom: -55px;
-    transform: translate(-50%, -50%);
+    top: 110%;
+    transform: translate(-50%, -30%);
 }
 ul.slick-dots li {
     display: inline-block;
@@ -379,9 +379,9 @@ video{
     width: 12px;
     height: 15px;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: #f2efef;
-}
+} */
 ::-webkit-scrollbar-thumb {
     background: #c0bdbd;
     border-radius: 50vh;
@@ -394,9 +394,9 @@ video{
     width: 8px;
     height: 15px;
 }
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
     background: #f2efef;
-}
+} */
 ::-webkit-scrollbar-thumb {
     background: #c0bdbd;
     border-radius: 50vh;
@@ -425,6 +425,9 @@ header.fixed-header{
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
     top: -70px;
+}
+#table-of-contents {
+    height: 470px;
 }
 #table-of-contents ul li a {
     color: var(--primary-black, #0D0E10);

@@ -332,7 +332,7 @@
     <!-- Latest articles section end -->
 
     <!-- footer start here -->
-<footer class="bg-fixed bg-cover md:py-14 py-14" style="background-image: url('images/gray-bg.png');">
+    <footer class="bg-gray-light-100 md:py-14 py-14">
     <div class="container mx-auto">
         <div class="lg:flex justify-between align-middle border-b pb-3">
             <div class="relative">
@@ -370,85 +370,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  
-  <script>
-    // Function to add IDs to headings and generate table of contents
-    function generateTableOfContents() {
-            const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
-            const tocElement = document.getElementById('table-of-contents');
-
-            let tocHTML = '<ul>';
-
-            headings.forEach((heading, index) => {
-                if (!heading.id) {
-                    heading.id = `heading-${index + 1}`;
-                }
-
-                const headingText = heading.textContent;
-                const headingId = heading.id;
-                tocHTML += `<li><a href="#${headingId}">${headingText}</a></li>`;
-            });
-
-            tocHTML += '</ul>';
-            tocElement.innerHTML = tocHTML;
-        }
-
-        // Call the function when the content is loaded
-        document.addEventListener('DOMContentLoaded', generateTableOfContents);
-
-    // mobile humburger menu start 
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('navbar-sticky');
-const menuIconOpen = document.getElementById('menu-icon-open');
-const menuIconClose = document.getElementById('menu-icon-close');
-
-mobileMenuButton.addEventListener('click', function () {
-    mobileMenu.classList.toggle('open-navbar');
-    menuIconOpen.classList.toggle('hidden');
-    menuIconClose.classList.toggle('hidden');
-    $("nav").toggleClass("drop-shadow-md");
-});
-// mobile humburger menu end
-
-//top search start here 
-var toggleButton = document.getElementById("top-search");
-  var mainSearch = document.getElementById("main-search");
-  var searchCloseButton = document.getElementById("search-close");
-
-  toggleButton.addEventListener("click", function() {
-    mainSearch.classList.toggle("open-search-form");
-  });
-
-  searchCloseButton.addEventListener("click", function() {
-    mainSearch.classList.remove("open-search-form");
-  });
-  // top search end here 
-
-  // fixed header start here 
-  document.addEventListener("DOMContentLoaded", function() {
-    var header = document.querySelector("header");
-    var topbar = document.getElementById("topbar");
-
-    window.addEventListener("scroll", function() {
-      if (window.scrollY > 0) {
-        header.classList.add("fixed-header");
-        topbar.classList.add('hidden');
-      } else {
-        header.classList.remove("fixed-header");
-        topbar.classList.remove('hidden');
-      }
-    });
-});
-// fixed header end here 
-// table of contents active class
-$(document).ready(function () { 
-    $('#table-of-contents li:nth-child(3)').addClass('active');   
-    $("#table-of-contents li a").click(function(){
-        var parentElement = $(this).parent();
-        parentElement.toggleClass("active").siblings().removeClass("active");
-    });
-});
-</script>
+    <script src="js/custom-script.js" type="text/javascript"></script>
 </body>
 
 </html>
