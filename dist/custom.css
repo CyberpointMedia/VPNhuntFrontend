@@ -84,6 +84,12 @@ body, p{
 .btn-bg-green-200{
     background: #5DA283;
 }
+.text-green-dark-400{
+    color: #5DA283;
+}
+.text-red-dark-400{
+    color: #DA3940;
+}
 .btn-black-dark, .bg-black-dark{
     background: #0D0E10;
 }
@@ -384,35 +390,17 @@ video{
 
 
 /* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 12px;
-    height: 15px;
-}
 /* ::-webkit-scrollbar-track {
     background: #f2efef;
 } */
 ::-webkit-scrollbar-thumb {
-    background: #c0bdbd;
+    background: #BABABA;
     border-radius: 50vh;
-    border: 1px solid #f6f7ed;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: gray;
+    border: 1px solid #BABABA;
 }
 ::-webkit-scrollbar {
     width: 8px;
-    height: 15px;
-}
-/* ::-webkit-scrollbar-track {
-    background: #f2efef;
-} */
-::-webkit-scrollbar-thumb {
-    background: #c0bdbd;
-    border-radius: 50vh;
-    border: 1px solid #f6f7ed;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: gray;
+    height: 4px;
 }
 .sticky{
     position: sticky;
@@ -458,6 +446,24 @@ video::-webkit-media-controls {
     background: #F5F3F3;
     font-weight: 400 !important;
 }
+.vpnHunt_trust_box::after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: -8px;
+    width: 100%;
+    height: 88px;
+    background-color: #FF6961;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: -1;
+}
+
+
+
+
+
 
 @media only screen and (min-width: 1536px) {
     .vpnHunt-video{
