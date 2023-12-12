@@ -709,6 +709,14 @@ video {
   top: 0.75rem;
 }
 
+.-left-3 {
+  left: -0.75rem;
+}
+
+.-top-2 {
+  top: -0.5rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -990,6 +998,10 @@ video {
   height: 24rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1072,6 +1084,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .max-w-2xl {
@@ -1362,6 +1378,10 @@ video {
 
 .border-t-0 {
   border-top-width: 0px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
 }
 
 .border-dashed {

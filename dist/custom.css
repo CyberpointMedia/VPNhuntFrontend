@@ -473,7 +473,7 @@ video::-webkit-media-controls {
     z-index: -1;
     filter: drop-shadow(0px 8px 18px rgba(23, 33, 83, 0.12)) drop-shadow(0px 12px 42px rgba(23, 33, 83, 0.12));
 }
-.deal_coupon_box .md\:border-r-2{
+.border-rgt-1, img.border-r-2{
     border-right-width: 1px;
     border-color: #646F79;
 }
@@ -598,10 +598,10 @@ button.slick-prev.slick-arrow{
 .mobile-none{
     display: none;
 }
-.deal_coupon_box .md\:border-r-2 {
+.border-rgt-1 {
     border-right: 0px;
 }
-.deal_coupon_box .border-b-2 {
+.border-bottm-1 {
     border-bottom-width: 1px;
     border-color: #646F79;
 }
