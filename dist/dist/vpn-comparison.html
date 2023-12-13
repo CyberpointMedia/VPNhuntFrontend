@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vpnHunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="custom.css" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="relative">
+        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
+            <div class="container">
+                <div class="flex flex-wrap justify-between items-center text-center md:text-left">
+                    <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
+                    <p class="text-sm md-sm-none">Check out our video tutorials on <a href="javascript:void(0);" class="font-medium"><img src="images/youtube-icon.svg" alt="#" class="inline-block" />Youtube</a></p>
+                </div>
+            </div>
+        </div>
+        <nav
+            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200 drop-shadow-md">
+            <div class="container">
+                <div class="flex flex-wrap items-center justify-between py-4">
+                    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                    </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                        <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul
+                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-10 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                            <li class="relative group">
+                                <a href="best-vpn.html"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
+                                    aria-current="page">Best VPN
+                                </a>
+                                <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                                <!-- mega menu start -->
+                                <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[290px] lg:transform">
+                                    <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div
+                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <p class="text-black font-bold text-base">Popular by Category</p>
+                                            <ul class="mt-3 text-[15px]">
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Best VPNs For Torrenting
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Best Free VPNs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Best VPNs For Gaming
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Best VPNs Free Trials
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Fastest VPNs
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- mega menu end -->
+                            </li>
+                            <li class="relative group">
+                                <a href="vpn-reviews.html"
+                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews
+                                </a>
+                                    <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
+                                    <!-- mega menu start -->
+                                <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[290px] lg:transform">
+                                    <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div
+                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <p class="text-black font-bold text-base">VPN Reviews</p>
+                                            <ul class="mt-3 text-[15px]">
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                ExpressVPN
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                CyberGhost VPN
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                Private Internet Access
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                IPVanish
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                NordVPN
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- mega menu end -->
+                            </li>
+                            <li class="relative group">
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN
+                                </a>
+                                <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                </svg>
+                                <!-- mega menu start -->
+                                <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 md:min-w-[560px] min-w-[290px] lg:transform">
+                                    <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div
+                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <p class="text-black font-bold text-base">Popular Compare</p>
+                                            <div class="md:grid md:grid-cols-2 gap-4">
+                                                <div class="">
+                                                    <ul class="mt-3 text-[15px]">
+                                                        <li>
+                                                            <a href="#"
+                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                            ExpressVPN vs. NordVPN
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                            ExpressVPN vs. CyberGhost VPN
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                            Express VPN vs. Private Internet Access
+                                                            </a>
+                                                        </li>
+                                                        </ul>
+                                                </div>
+                                                <div class="">
+                                                    <ul class="mt-3 text-[15px]">
+                                                        <li>
+                                                            <a href="#"
+                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                            ExpressVPN vs. Surfshark
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"
+                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-base">
+                                                            ExpressVPN vs. IPVanish
+                                                            </a>
+                                                        </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" class="font-medium text-[#0D0E10] py-2 text-center border border-[#0D0E10] w-full rounded block hover:bg-[#D8423A] mt-5">Compare Yourself Now!</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- mega menu end -->
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                            </li>
+                            <li>
+                                <a href="guides.html"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main search start here -->
+        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
+            <form class="flex items-center">   
+                <div class="relative w-full">
+                    <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>   
+                    <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
+                </div>
+                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </form>
+        </div>
+        <!-- main search end here -->
+    </header>
+    <!-- header end here -->
+
+    <!-- top banner start here -->
+    <section class="top-bg bg-center bg-cover" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
+        <div>
+            <div class="container">
+                <nav class="md:mb-16 mb-10 pt-6" aria-label="breadcrumb">
+                    <ol class="flex space-x-2 items-center">
+                        <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
+                        <li class="text-red-400 text-sm" aria-current="page">Comparison</li>
+                      </ol>
+                  </nav>
+                    <div class="flex md:flex-row flex-col flex-wrap relative md:text-left">
+                        <div class="md:w-2/3 w-full">
+                            <h1 class="font-medium text-4xl text-black mb-3">
+                                VPN Comparison Tool
+                            </h1>
+                            <p class="text-base">
+                                Use the VPN comparison tool below to compare up to five VPNs side-by-side based on their pricing, speeds, security, logging policy, and more.
+                            </p>
+                            <div class="mt-10">
+                                <p class="font-medium text-base">Add a VPN to compare:</p>
+                                <div class="flex flex-wrap mb-10 gap-3 items-center" id="compare-row">
+                                    <div class="comparison-row">
+                                        <select class="compare1 rounded-e-md bg-white px-4 py-1">
+                                            <option>select 1</option>
+                                            <option>select 2</option>
+                                            <option>select 3</option>
+                                        </select>
+                                        <select class="compare1 rounded-e-md bg-white px-4 py-1">
+                                            <option>select 4</option>
+                                            <option>select 5</option>
+                                            <option>select 6</option>
+                                        </select>
+                                    </div>
+                                    <button class="bg-white p-4" id="add-compare">add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/4 w-full md:absolute bottom-0 right-0 content-end">
+                            <img src="images/nord-vs-express.svg" alt="#" class="inline-block" />
+                        </div>
+                    </div>                   
+            </div>
+          </div>
+    </section>
+    <!-- top banner end here -->
+
+    <!-- page link start -->
+    <section class="list-links">
+        <div class="container">
+            <div class="flex flex-wrap md:flex-wrap-reverse md:flex-row items-center text-center md:text-left md:mt-0 mt-5 py-5 justify-between">
+                <p class="md:w-1/6 w-full font-medium text-base">VPN Guides:</p>
+                <ul class="md:w-10/12 w-full overflow-x-auto horizontal-scroll whitespace-nowrap">
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center active">VPN for Straming</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for Torrenting</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for Gamers</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for Cheap</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for iPhone</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for Android</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">Free VPNs</a>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" class="text-sm font-normal border-b-4 border-transparent duration-30 hover-text text-center">VPNs for Chrome</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- page link end -->
+
+    <!-- content section start here -->
+    <section class="our-expertise-sec md:py-14 py-5">
+        <div class="container">
+            <div class="flex lg:flex-row flex-col flex-wrap relative items-start px-0 md:px-10 lg:px-0">
+                <div class="lg:w-3/12 rounded-lg relative mb-3 md:mb-4 lg:mb-0 md-sm-none">
+                    <p class="mb-3 font-medium">Top VPN Deals</p>
+                    <div class="bg-white w-full text-center py-5 px-8 border mb-5 relative">
+                        <div class="absolute -left-1 -top-1 w-20 h-6 bg-no-repeat bg-cover" style="background-image: url(images/winner-label.svg);">
+                        </div>
+                        <div class="">
+                            <img src="images/expressvpn-brand-logo1.svg" alt="#" class="inline-block mx-auto">
+                            <div class="text-base relative inline-block font-medium">Editors Rating: 9.7<span class="text-xs">/10</span>
+                                <div class="absolute -left-5 top-1 w-4 h-4  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                            </div>
+                            <div class="my-5 text-center">
+                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit ExpressVPN</a>
+                            </div>
+                        </div>
+                        <hr class="-mx-8 mt-4" />
+                        <div class="">
+                            <img src="images/nord-vpn-lgo.svg" alt="#" class="inline-block mx-auto">
+                            <div class="text-base relative inline-block font-medium">Editors Rating: 9.1<span class="text-xs">/10</span>
+                                <div class="absolute -left-5 top-1 w-4 h-4  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                            </div>
+                            <div class="my-5 text-center">
+                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit NordVPN</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="rounded-lg sticky mb-3 md:mb-4 lg:mb-0">
+                        <p class="mb-2 md-sm-none font-medium">Table of Contents:</p>
+                        <div id="table-of-contents" class="flex-column text-sm bg-white border py-4 table-content overflow-y-scroll hidden lg:block"></div>
+                    </div>                    
+                </div>
+                <div class="lg:w-3/4 w-full lg:pl-28 text-left">
+                    <!-- right content section start -->
+
+                    <div class="right_content_sec">
+                        <div class="relative">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg" /></div>
+                            <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">Our Verdict</h2>
+                            <div class="bg-gray-light-100 rounded-2xl p-5 relative mt-6 py-7">
+                                <div class="">
+                                    <p>
+                                        Our tests show that <a href="javascript:void(0);" class="text-red-400 font-medium">ExpressVPN is the better VPN</a>, beating NordVPN in 70% of our testing categories. ExpressVPN has servers in 34 more countries than NordVPN, and its international speeds are 8Mbps faster on average. But, <a href="javascript:void(0);" class="text-red-400 font-medium">NordVPN costs half the price</a>, and it includes more security settings. ExpressVPN is our winner, but NordVPN is a close second.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-5 lg:px-10 px-4 mt-10 mb-8 deal_coupon_box relative">
+                            <div class="absolute left-0 top-0 w-20 h-6 bg-no-repeat bg-cover" style="background-image: url(images/winner-label.svg);"></div>
+                            <div class="flex md:flex-row flex-col justify-between items-center md:mt-4">
+                                <div class="md:w-1/4 w-full text-center pr-7 md:border-r-2 border-b-2 border-rgt-1 border-bottm-1 md:border-b-0 pb-3 md:pb-0 mb-4 md:mb-0 border-dashed border-spacing-10 border-black md:mr-6">
+                                    <img src="images/express-vpn-brand-logo.svg" alt="#" class="inline-block mx-auto" />
+                                    <div class="flex items-center mb-3 justify-center">
+                                        <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                            <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                        </div>
+                                        <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i><img src="images/info-icon.svg" alt="#" class="ml-2 inline-block"></div>
+                                    </div>
+                                </div>
+                                <div class="md:w-3/4 w-full text-center">
+                                    <div class="text-base font-normal">ExpressVPN Coupon</div>
+                                    <div class="font-bold md:text-2xl text-xl mt-1 mb-4">Save: 49% on the annual plan</div>
+                                    <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-2 px-8 inline-block mb-3 items-center uppercase"><img src="images/like-white.svg" alt="#" class="inline-block mr-2" />Get the deal</a>
+                                    <p class="text-sm">Coupon applied automatically</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="py-5 lg:px-10 px-4 mt-5 mb-14 deal_coupon_box relative">
+                            <div class="flex md:flex-row flex-col justify-between items-center md:mt-4">
+                                <div class="md:w-1/4 w-full text-center pr-7 md:border-r-2 border-b-2 border-rgt-1 border-bottm-1 md:border-b-0 pb-3 md:pb-0 mb-4 md:mb-0 border-dashed border-spacing-10 border-black md:mr-6">
+                                    <img src="images/nord-vpn-lgo.svg" alt="#" class="inline-block mx-auto" />
+                                    <div class="flex items-center mb-3 justify-center">
+                                        <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                            <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                        </div>
+                                        <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i><img src="images/info-icon.svg" alt="#" class="ml-2 inline-block"></div>
+                                    </div>
+                                </div>
+                                <div class="md:w-3/4 w-full text-center">
+                                    <div class="text-base font-normal">NordVPN Coupon</div>
+                                    <div class="font-bold md:text-2xl text-xl mt-1 mb-4">Save: 49% on the annual plan</div>
+                                    <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-2 px-8 inline-block mb-3 items-center uppercase"><img src="images/like-white.svg" alt="#" class="inline-block mr-2" />Get the deal</a>
+                                    <p class="text-sm">Coupon applied automatically</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            NordVPN and ExpressVPN are our <a href="javascript:void(0);" class="text-red-400 font-medium">most highly-rated VPN services</a>. Each VPN provides best-in-class security, privacy, unrestricted internet access, and fast connection speeds worldwide.
+                            <br>
+                            <br>
+                            It’s a close call to pick the better VPN, and many of our readers ask us: which is better in 2023, NordVPN or ExpressVPN?
+                            <br>
+                            <br>
+                            In this guide, we compare ExpressVPN and NordVPN in ten key test areas, based on our extensive <a href="javascript:void(0);" class="text-red-400 font-medium">VPN testing process</a>.
+                        </p>
+
+                        <div class="relative md:mt-16 mt-8">
+                            <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                            <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">Quick Summary: NordVPN vs ExpressVPN</h2>
+                            <p>
+                                Below are the different test categories we examined for this ExpressVPN vs NordVPN   comparison report:
+                            </p>
+                            <div class="rounded-2xl overflow-x-auto mt-5 mb-10">
+                                <table class="w-full border-collaps">
+                                    <thead>
+                                        <tr class="bg-gray-light-100">
+                                            <th class="py-3 px-5 border border-slate-200 text-red-400"><b>ExpressVPN</b></th>
+                                            <th class="py-3 px-5 border border-slate-200 text-red-400">NordVPN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200">Fast Speeds</td>
+                                            <td class="py-3 px-5 border border-slate-200">Fast Speeds</td>
+                                        </tr>
+                                        <tr class="bg-gray-light-100">
+                                            <td class="py-3 px-5 border border-slate-200">Based in BVI</td>
+                                            <td class="py-3 px-5 border border-slate-200">Based in Panama</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200">Unblocks a huge range of region-locked streaming services</td>
+                                            <td class="py-3 px-5 border border-slate-200">Great at unblocking geo-restricted services from abroad</td>
+                                        </tr>
+                                        <tr class="bg-gray-light-100">
+                                            <td class="py-3 px-5 border border-slate-200">Custom router firmware</td>
+                                            <td class="py-3 px-5 border border-slate-200">Add-blocking, malware-scanning, and automatic wifi protection</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200">Split tunneling</td>
+                                            <td class="py-3 px-5 border border-slate-200">Split tunneling</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <h4 class="my-5 text-xl lg:text-2xl font-medium text-black">NordVPN vs ExpressVPN features</h4>
+                            <div class="overflow-x-auto my-8">
+                                <table class="w-auto table ">
+                                    <thead>
+                                        <tr>
+                                            <th class="py-2 px-3 text-base font-medium text-center border-0">&nbsp;</th>
+
+                                            <th class="py-2 px-3 text-base font-medium text-center border">
+                                                <p>ExpressVPN</p>
+                                                <img src="images/expressvpn-brand-logo1.svg" alt="#" />
+                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            </th>
+
+                                            <th class="py-2 px-3 text-base font-medium text-center border">
+                                                <p>NordVPN</p>
+                                                <img src="images/brand-logo-nordvpn.svg" alt="#" />
+                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Overall Rating</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                <div class="flex items-center mb-3 justify-center">
+                                                    <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                                        <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                                    </div>
+                                                    <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i><img src="images/info-icon.svg" alt="#" class="ml-2 inline-block"></div>
+                                                </div>
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                <div class="flex items-center mb-3 justify-center">
+                                                    <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                                        <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                                    </div>
+                                                    <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i><img src="images/info-icon.svg" alt="#" class="ml-2 inline-block"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Lowest Monthly Price</td>
+
+                                            <td class="py-2 px-3 text-sm text-center border">
+                                                <p>$6.67/month with<br> 3 months of service free on a 1-year plan</p>
+                                            </td>
+
+                                            <td class="py-2 px-3 text-sm text-center border">
+                                                <p>$3.19/month <br> only on your first 2-year subscription</p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Price on Renewal</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                <b>$99.95</b> per year
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                <b>$99.48</b> per year
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Coupons</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                <p class="text-base"><b>ExpressVPN 49% off </b><br>
+                                                <span class="text-sm">(12-month plan)</span>
+                                                </p>
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                <p class="text-base"><b>NordVPN 68% off </b><br>
+                                                    <span class="text-sm">(24-month plan)</span>
+                                                    </p>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Money Back Guarantee</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">30 days</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">30 days</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Streaming & Unblocking</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Can access Netflix, Hulu, Disney+, Amazon Prime, and more</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Can access most streaming platforms but might experience delays</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">VPN Servers</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">94 countries with 3,000 servers </td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">60 countries with 5,863 servers</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Speed</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">7% speed drop, ideal for 4k streaming</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">8% speed drop connected to nearby servers</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Gaming Performance</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Optimal speed and ping</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Low ping rate on servers close by, but struggles over long distances</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">P2P Support</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Yes, on all servers</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Only specific servers are optimized for torrenting</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Security Protocols</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Lightway, OpenVPN, IPSec/IKEv2, and IPSec/L2TP</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">NordLynx (WireGuard), OpenVPN, IPSec/IKEv2, and IPSec/L2TP</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Kill Switch</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Yes</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Yes</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">IP/DNS Leak Protection</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Yes</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Yes</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Based In Country</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">British Virgin Islands</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">Panama</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Does  VPN Keep Logs</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">No</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">Maybe</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Works in China</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                Yes
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                No
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Number of Device Connections</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                8
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                6
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Device Compatibility</td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                Windows, Mac, iOS, Android, Linux, Chrome, Firefox, and Edge. Plus, a native app for routers
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border">
+                                                Windows, Mac, iOS, Android, Linux, Chrome, Firefox, and Edge. Plus, a native app for routers
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-2 px-3 text-base font-medium text-left border">Customer Support</td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                24/7 live chat, knowledge base, FAQs and email
+                                            </td>
+
+                                            <td class="py-2 px-3 text-base text-center border bg-gray-light-200">
+                                                24/7 live chat, knowledge base, FAQs, and email
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                Lastly, we will wrap up this comparison with some FAQs and our conclusion and recommendations from this battle of ExpressVPN vs NordVPN.
+                                <br>
+                                <br>
+                                Now let’s get into the in-depth test results for this comparison guide. First up are the speed tests.
+                            </p>
+                        </div>
+
+                        <div class="mt-8">
+                            <div class="shadow-xl rounded-2xl py-3 px-5 mb-8 md:mb-16 mt-8 border vpnHunt_trust_box relative bg-white">
+                                <div class="flex flex-col md:flex-row flex-wrap py-5">
+                                    <div class="md:w-4/5 w-full md:pr-10">
+                                        <h6 class="text-xl md:text-2xl font-medium mb-4">Why Trust vpnHunt?</h6>
+                                        <p class="text-base">
+                                            We’re completely independent and focused on VPN software. We’ve spent 150+ years and thousands of hours testing and reviewing VPNs using our unbiased VPN review process to recommend the best ones.
+                                            <br>
+                                            <br>
+                                            Here are some of our key VPN testing statistics:
+                                        </p>
+                                    </div>
+                                    <div class="w-1/5 hidden md:block">
+                                        <img src="images/logo-icon.svg" alt="#" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col md:flex-row flex-wrap my-5 md:space-x-5 xl:space-x-10 md:space-y-0 space-y-5">
+                                    <div class="flex flex-wrap items-start">
+                                        <img src="images/lab-icon.svg" alt="#" class="mr-1" />
+                                        <p>
+                                            <b class="font-bold block mb-1">35+</b>
+                                            <span class="text-base">VPNs Tested</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-wrap items-start">
+                                        <img src="images/stopwatch-icon.svg" alt="#" class="mr-1" />
+                                        <p>
+                                            <b class="font-bold block mb-1">16,000</b>
+                                            <span class="text-base">Total Hours of Testing</span>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-wrap items-start">
+                                        <img src="images/money-icon.svg" alt="#" class="mr-1" />
+                                        <p>
+                                            <b class="font-bold block mb-1">$40,000</b>
+                                            <span class="text-base">Money Invested Of Testing</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-2">
+                                <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                                <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">VPN Apps comparison with ExpressVPN and NordVPN</h2>
+                            </div>
+                            <p>
+                                In this category, we are mainly looking at the design and usability of the VPN apps (user experience).
+                            </p>
+                                <div class="rounded-2xl mt-8 mb-10 overflow-x-auto">
+                                    <table class="w-full border-collaps">
+                                    <thead>
+                                        <tr class="">
+                                            <th class="py-3 px-5">&nbsp;</th>
+                                            <th class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center"><a href="javascritp:void(0);" class="text-red-400 font-medium bg-gray-light-100">ExpressVPN.com</a></th>
+                                            <th class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center"><a href="javascritp:void(0);" class="text-red-400 font-medium">NordVPN.com</a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200 font-medium">Automatic setup wizard</td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center">Window, macOS, iOS, Android, Linux, Tomato and DD-WRT routers</td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center">Linux, Windows, MacOS, iOS, Android</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200 font-medium">Main location selection</td>
+                                            <td class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center">List-based</td>
+                                            <td class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center">Map-based/List-based</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200 font-medium">Extra settings pages</td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center"><img src="images/tick.svg" class="mx-auto"></td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center"><img src="images/cross.svg" class="mx-auto"></td>
+                                        </tr>
+
+                                        <tr class="bg-gray-light-100">
+                                            <td class="py-3 px-5 border border-slate-200 font-medium">Mobile-friendly</td>
+                                            <td class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center"><img src="images/tick.svg" class="mx-auto"></td>
+                                            <td class="py-3 px-5 border border-slate-200 bg-gray-light-100 text-center"><img src="images/cross.svg" class="mx-auto"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="py-3 px-5 border border-slate-200 font-medium">Best deal (per month)</td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center">$6.67/month <br>SAVE: 49% on the annual plan</td>
+                                            <td class="py-3 px-5 border border-slate-200 text-center">$3.19/month <br>SAVE: 61% + 3 months free</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="my-8 ">
+                                <h4 class="my-5 text-xl lg:text-2xl font-medium text-black">ExpressVPN</h4>
+                                <p>
+                                    First, we’ll examine the ExpressVPN apps. As you can see below, the ExpressVPN client is clean and minimal, as I pointed out in the <a hrf="javascriptvoid(0);" class="text-red-400 font-medium">ExpressVPN review</a>.
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    To access more features and settings, you will need to click the three lines in the top-left corner, which will open up a second window. This can be a bit confusing, but it also keeps the main app screen less cluttered.
+                                    <br>
+                                    <br>
+                                    Similarly, when you want to switch servers with ExpressVPN, you will need to either click one of the two options at the bottom of the app or click the active server to open up a second window of server locations. While NordVPN keeps everything in the main app screen, ExpressVPN relies on a second screen popup for more options.
+                                </p>
+                                <h4 class="my-5 text-xl lg:text-2xl font-medium text-black">NordVPN apps</h4>
+                                <p>
+                                    In contrast to ExpressVPN, NordVPN apps take up a bit more space but also include more options. You can see on the left side of the NordVPN client the specialty servers and country locations. You can also quickly select a server location with only one click from the global map, as you can see below:
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    In comparison to ExpressVPN, the NordVPN Windows app is larger, but it also gives you easier access to features, server locations, and specialty servers, without having to open up second windows. This is a big advantage and one reason we ranked it as one of the <a hrf="javascriptvoid(0);" class="text-red-400 font-medium">best VPNs for PC</a> users.
+                                    <br>
+                                    <br>
+                                    Ultimately, this all comes down to user preference. Both ExpressVPN and NordVPN offer good VPN apps.
+                                </p>
+                            </div>
+                            
+                            <div class="border rounded-2xl py-10 md:px-10 px-5 border-red-400 shadow-lg my-10 relative">
+                                <div class="absolute -left-3 -top-2 w-28 h-12 bg-no-repeat bg-cover" style="background-image: url(images/winner-label-red.svg);"></div>
+                                <div class="flex md:flex-row flex-col justify-between items-center">
+                                    <div class="md:w-1/4 w-full text-center pr-7 md:border-r-2 border-rgt-1 border-bottm-1 border-b-2 md:border-b-0 pb-3 md:pb-0 mb-4 md:mb-0 border-dashed border-spacing-10 border-black md:mr-6">
+                                        <img src="images/express-vpn-brand-logo.svg" alt="#" class="inline-block mx-auto">
+                                    </div>
+                                    <div class="md:w-3/4 w-full text-left">
+                                        <p>ExpressVPN is the best all-around VPN our global team of VPN experts has tested, with incredibly fast speeds and strong security.</p>
+                                    </div>
+    
+                                </div>
+                            </div>
+
+                            <div class="relative md:mt-16 mt-8 md:mb-12 mb-8">
+                                <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                                <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">ExpressVPN vs NordVPN speed tests in 2023</h2>
+                                <p>
+                                    Based on all of the speed tests we ran for this comparison, NordVPN is faster than ExpressVPN with all server locations tested.
+                                    <br>
+                                    <br>
+                                    Speed testing variables – I ran all tests for this NordVPN vs ExpressVPN speed comparison on a 500 Mbps connection, using the same test machine. I used the official VPN app for each service, along with the best protocols for speed and security:
+                                </p>
+                                <ul class="my-5 space-y-5 list-disc pl-7">
+                                    <li>
+                                        ExpressVPN’s Lightway protocol – This is a new protocol that was released by ExpressVPN. It promises to be faster and more secure than OpenVPN.
+                                    </li>
+                                    <li>
+                                        NordVPN’s WireGuard protocol – The WireGuard VPN protocol continues to gain popularity because it is faster and more secure than other VPN protocols. NordVPN’s implementation of the WireGuard VPN protocol is called NordLynx.
+                                    </li>
+                                </ul>
+                                <p>
+                                    First up were speed tests with servers in the United States. Now let’s examine the test results.
+                                </p>
+                                <h4 class="md:mt-10 mt-5 mb-3 text-xl lg:text-2xl font-medium text-black">Server speeds in the US</h4>
+                                <p>ExpressVPN server in Seattle: 136 Mbps</p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    This is not a great test result, at less than 150 Mbps. And keep in mind that this is with ExpressVPN’s Lightway protocol. We found ExpressVPN speeds with OpenVPN to be significantly slower as well. Can NordVPN do better?
+                                    <br>
+                                    <br>
+                                    NordVPN server in Seattle: 755 Mbps
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    This is the fastest VPN speed test we have ever clocked, approaching 755 Mbps. We can see that NordVPN is significantly faster than ExpressVPN. It’s already clear that the WireGuard VPN protocol gives NordVPN a big advantage.
+                                    <br>
+                                    <br>
+                                    Next, I tested servers in Los Angeles, California.
+                                    <br>
+                                    <br>
+                                    ExpressVPN server in Los Angeles: 209 Mbps
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    NordVPN server in Los Angeles: 636 Mbps
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    Once again, NordVPN outperformed ExpressVPN in this server location by a large margin.
+                                    I then ran tests for servers in New York, with similar test results.
+                                    <br>
+                                    <br>
+                                    ExpressVPN server in New York: 214 Mbps
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    We can still see here that ExpressVPN’s Lightway protocol simply cannot achieve the speeds we are getting with NordVPN’s WireGuard (NordLynx) protocol.
+                                    <br>
+                                    <br>
+                                    NordVPN server in New York: 613 Mbps
+                                </p>
+                                <div class="no_imgSec bg-gray-dark-400 h-96 relative my-5">
+                                    <div class="absolute left-1/2 top-1/2 tran -translate-x-2/4 -translate-y-2/4 cursor-pointer"><img src="images/no-image-icon.svg" alt="#"></div>
+                                    <div class="absolute right-5 bottom-5"><a href="index.html"><img src="images/logo.svg" alt="#"></a></div>
+                                </div>
+                                <p>
+                                    This was the slowest VPN speed test result I got with NordVPN — and it was still significantly faster than ExpressVPN.
+                                </p>
+                                <div class="rounded-2xl overflow-x-auto mt-5 mb-10">
+                                    <table class="w-full border-collaps">
+                                        <thead>
+                                            <tr class="bg-gray-light-100">
+                                                <th class="py-3 px-5 border border-slate-200 font-medium">Location</th>
+                                                <th class="py-3 px-5 border border-slate-200 font-medium text-center">Original Speed</th>
+                                                <th class="py-3 px-5 border border-slate-200 font-medium text-center">NordVPN</th>
+                                                <th class="py-3 px-5 border border-slate-200 font-medium text-center">ExpressVPN</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="py-3 px-5 border border-slate-200 font-medium"> Seattle</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">755 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">755 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">136 Mbps</td>
+                                            </tr>
+                                            <tr class="bg-gray-light-100">
+                                                <td class="py-3 px-5 border border-slate-200 font-medium"> Los Angeles</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">636 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">636 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">209 Mbps</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-5 border border-slate-200 font-medium"> New York</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">613 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">613 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">214 Mbps</td>
+                                            </tr>
+                                            <tr class="bg-gray-light-100">
+                                                <td class="py-3 px-5 border border-slate-200 font-medium"> United Kingdom</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">592 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">592 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">235 Mbps</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="py-3 px-5 border border-slate-200 font-medium">OpenVPN</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">214 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">214 Mbps</td>
+                                                <td class="py-3 px-5 border border-slate-200 text-center">41 Mbps</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="border rounded-2xl py-10 md:px-10 px-5 border-red-400 shadow-lg my-10 relative">
+                                    <div class="absolute -left-3 -top-2 w-28 h-12 bg-no-repeat bg-cover" style="background-image: url(images/winner-label-red.svg);"></div>
+                                    <div class="flex md:flex-row flex-col justify-between items-center">
+                                        <div class="md:w-1/4 w-full text-center pr-7 md:border-r-2 border-rgt-1 border-bottm-1 border-b-2 md:border-b-0 pb-3 md:pb-0 mb-4 md:mb-0 border-dashed border-spacing-10 border-black md:mr-6">
+                                            <img src="images/express-vpn-brand-logo.svg" alt="#" class="inline-block mx-auto">
+                                        </div>
+                                        <div class="md:w-3/4 w-full text-left">
+                                            <p>ExpressVPN is the best all-around VPN our global team of VPN experts has tested, with incredibly fast speeds and strong security.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative md:mt-16 mt-8 md:mb-12 mb-8">
+                                    <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                                    <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">Price comparison in 2023</h2>
+                                    <p>
+                                        In terms of price, NordVPN is winner with the cheapest rates.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Here is a brief breakdown of the pricing with both ExpressVPN and NordVPN:
+                                    </p>
+
+                                    <div class="rounded-2xl overflow-x-auto mt-8 mb-10">
+                                        <table class="w-full border-collaps">
+                                            <thead>
+                                                <tr class="bg-gray-light-100">
+                                                    <th class="py-3 px-5 border border-slate-200 font-medium">Time</th>
+                                                    <th class="py-3 px-5 border border-slate-200 font-medium">NordVPN</th>
+                                                    <th class="py-3 px-5 border border-slate-200 font-medium">ExpressVPN</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="py-3 px-5 border border-slate-200 font-medium"> Monthly</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$11.95</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$12.95</td>
+                                                </tr>
+                                                <tr class="bg-gray-light-100">
+                                                    <td class="py-3 px-5 border border-slate-200 font-medium"> 6-months</td>
+                                                    <td class="py-3 px-5 border border-slate-200">N/A</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$9.99/mo</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="py-3 px-5 border border-slate-200 font-medium">1-year</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$4.92/mo</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$6.67/mo</td>
+                                                </tr>
+                                                <tr class="bg-gray-light-100">
+                                                    <td class="py-3 px-5 border border-slate-200 font-medium">2-year</td>
+                                                    <td class="py-3 px-5 border border-slate-200">$3.19/mo</td>
+                                                    <td class="py-3 px-5 border border-slate-200">N/A</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="border rounded-2xl py-10 md:px-10 px-5 border-red-400 shadow-lg my-10 relative">
+                                    <div class="absolute -left-3 -top-2 w-28 h-12 bg-no-repeat bg-content" style="background-image: url(images/tie-label.svg);"></div>
+                                    <div class="flex md:flex-row flex-col justify-between items-center">
+                                        <div class="md:w-1/4 w-full text-center pr-7 md:border-r-2 border-rgt-1 border-bottm-1 border-b-2 md:border-b-0 pb-3 md:pb-0 mb-4 md:mb-0 border-dashed border-spacing-10 border-black md:mr-6">
+                                            <img src="images/express-small-logo.svg" alt="#" class="inline-block mx-auto w-2/5 border-r-2 border-dashed border-spacing-10 border-black">
+                                            <img src="images/nord-small-logo.svg" alt="#" class="inline-block mx-auto w-2/5">
+                                        </div>
+                                        <div class="md:w-3/4 w-full text-left">
+                                            <p>ExpressVPN is the best all-around VPN our global team of VPN experts has tested, with incredibly fast speeds and strong security.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <!-- faq start here -->
+                                <div class="relative md:mt-16 mt-8 mb-5">
+                                    <div class="absolute -left-8 top-1 w-6 h-6  invisible md:visible"><img src="images/logo-icon.svg"></div>
+                                    <div class="text-2xl lg:text-3xl font-medium text-black">Frequently Asked Questions</div>
+                                </div>
+                                <div accordion="" class="mb-7">
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                      <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="true">
+                                            What is the #1 best VPN?
+                                          <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                            <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                          </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left">
+                                            Based on our most recent tests, ExpressVPN is the current #1 VPN service. It has an extensive set of security features, consistently fast speeds, and intuitive applications for all devices. Importantly, it also has an excellent track record for protecting its users’ privacy.
+                                            <br>
+                                            <br>
+                                            ExpressVPN works particularly well for unblocking geo-restricted streaming services. It can access 10 international Netflix regions, along with other popular services like Hulu, Disney Plus, and HBO Max.
+                                            <br>
+                                            <br>
+                                            Put simply, ExpressVPN outperforms every other VPN service in almost every single testing category, and it has done so for several years. Despite its above-average subscription price, it’s absolutely worth it given its superior capabilities as a VPN.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            Are VPN Services Legal?
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                          <br>
+                                          <br>
+                                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            Are VPNs trustworthy?
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            How do I Set UP &amp; Use a VPN? 
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                                          <br>
+                                          <br>
+                                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            Is it worth paying for a VPN?
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                                        </div>
+                                      </div>              
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            Can you be tracked if you use a VPN?
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                                        </div>
+                                      </div>              
+                                    </div>
+                                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                                        <div class="mb-0 accordion-toggle">
+                                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                                            Which free VPNs are best?
+                                            <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
+                                                <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
+                                            </i>
+                                        </button>
+                                      </div>
+                                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                                        </div>
+                                      </div>              
+                                    </div>
+                                </div>
+                                <p><b>Citations</b></p>
+                                <div class="bg-gray-light-200 rounded-2xl p-5 my-3">
+                                    <ol class="space-y-3 list-decimal pl-6">
+                                        <li class="text-sm">
+                                            Norton. (2020). What is a VPN?
+                                            <a href="//us.norton.com/internetsecurity-privacy-what-is-vpn-html" target="_blank" class="text-red-400 font-medium block">us.norton.com/internetsecurity-privacy-what-is-vpn-html</a>
+                                        </li>
+                                        <li class="text-sm">
+                                            Statista. (2020). Size of the virtual private network (VPN) market worldwide from 2016 to 2022.
+                                            <a href="//Statista.com/statistics/542817/worldwide-virtual-private-network-market/" target="_blank" class="text-red-400 font-medium block truncate">Statista.com/statistics/542817/worldwide-virtual-private-network-market/</a>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <br>
+                                <p class="items-center"><b>Was this content helpful?</b> <span class="space-x-3 pl-3"><img src="images/like.svg" alt="#" class="inline-block"><img src="images/dislike.svg" alt="#" class="inline-block"></span></p>
+                                <br>
+                                <p>
+                                    Topic: <a href="javascript:void(0);" class="text-red-400 font-medium"> Best VPN Services</a> 
+                                </p>
+                                <div class="my-8 hidden">
+                                    <a href="javascript:void(0);" class="duration-500 rounded text-black font-medium py-1 px-3 inline-block border border-black"><i class="far fa-comment mr-3"></i>Read Comments</a>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- right content section end -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content section end here -->
+
+    <!-- blog section start -->
+    <section class="blog_sec md:py-12 py-8">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="font-medium text-3xl md:text-4xl text-black">
+                    Related Posts</b>
+                </div>
+                <p class="text-lg font-normal mt-3 mb-7">Easy reads on VPNs and staying safe online. All you need to know, all in one place.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-3">
+                <!-- blog 1 -->
+               <div class="bg-black-dark rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                   <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-white.svg" alt="#" class="w-8 h-8"/></a>
+                   <img src="images/blog1.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                   <a href="javascript:void(0);" class="text-white">
+                       <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                       <span class="block mt-2 text-2xl font-medium">What is a VPN?</a>
+                   </a>
+               </div>
+               <!-- blog 2 -->
+               <div class="bg-orange-light-100 rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"/></a>
+                <img src="images/blog2.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How to Set Up a VPN?
+                    </a>
+                </a>
+            </div>
+            <!-- blog 3 -->
+            <div class="bg-voilet-light-300 rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"/></a>
+                <img src="images/blog3.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How does a VPN work to encrypt your data?</a>
+                </a>
+            </div>
+            <!-- blog 4 -->
+            <div class="bg-yellow-light-200 rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"/></a>
+                <img src="images/blog4.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">Are VPNs 100% safe?
+                    </a>
+                </a>
+            </div>
+            <!-- blog 5 -->
+            <div class="bg-blue-dark-400 rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"/></a>
+                <img src="images/blog5.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">Are VPNs legal? Check before you use one</a>
+                </a>
+            </div>
+            <!-- blog 6 -->
+            <div class="bg-green-dark-400 rounded-lg px-5 pb-8 md:pt-12 pt-8 relative blogs-col">
+                <a href="javascript:void(0);" class="absolute right-3 top-3"><img src="images/read-more-icon-black.svg" alt="#" class="w-8 h-8"/></a>
+                <img src="images/blog6.png" alt="#" class="mx-auto w-40 h-32 mb-5"/>
+                <a href="javascript:void(0);" class="text-black">
+                    <span class="block text-xs font-normal">Aug 7, 2023 | by Mark Oliver  </span>
+                    <span class="block mt-2 text-2xl font-medium">How does a VPN work to encrypt your data?</a>
+                </a>
+            </div>
+            </div>
+            <div class="text-center my-8">
+                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">See All Posts</a>
+            </div>
+        </div>
+    </section>
+    <!-- blog section end -->
+
+    <!-- footer start here -->
+    <footer class="bg-gray-light-100 md:py-14 py-14">
+    <div class="container mx-auto">
+        <div class="lg:flex justify-between align-middle border-b pb-3">
+            <div class="relative">
+                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+            </div>
+            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
+                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
+                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            </ul>
+        </div>
+        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
+            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
+            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
+            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
+            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
+        </ul>
+          <div class="lg:flex flex-row-reverse justify-between align-middle">
+            <ul class="lg:flex lg:space-x-4">
+                <a href="privacy-policy.html" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
+                <a href="cookies-policy.html" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
+                <a href="terms-conditions.html" class="hover:text-red-400 text-xs underline">Terms of Use</a>
+                <a href="disclaimer.html" class="hover:text-red-400 text-xs underline">Disclaimer</a>
+            </ul>
+            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
+          </div>
+    </div>
+</footer>
+    <!-- footer end here -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/custom-script.js" type="text/javascript"></script>
+</body>
+
+</html>
