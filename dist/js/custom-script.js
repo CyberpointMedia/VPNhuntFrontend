@@ -125,3 +125,30 @@ $(document).ready(function () {
 });
 // faq end here 
 
+// $(document).ready(function(){
+//   $(".add_item_btn").click(function(e){
+//     e.preventDefault();
+//     $("#show_item").prepend('<div class="text-[#0D0E10] font-medium">VS</div><select class="bg-white border border-[#E9E9E9] rounded py-2 px-4 text-base text-[#646F79]"><option selected>Select VPN</option><option>4</option><option>5</option><option>6</option></select>')
+//   })
+// })
+
+function addItem() {
+  const newItem = `
+    <li>
+    <div id="show_item" class="flex items-center gap-3">
+    <div class="text-[#0D0E10] font-medium">VS</div>
+    <select class="bg-white border border-[#E9E9E9] rounded py-2 px-4 text-base text-[#646F79]">
+        <option selected>Select VPN</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+</div>
+    </li>
+  `;
+
+  const list = document.getElementById('myList');
+  list.innerHTML += newItem;
+}
+
+
