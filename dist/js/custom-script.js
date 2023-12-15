@@ -80,6 +80,7 @@ $(document).ready(function(){
 
 // Function to add IDs to headings and generate table of contents
 function generateTableOfContents() {
+  if (document.getElementById('table-of-contents')){
     const headings = document.querySelectorAll('h2, h3, h4, h5, h6');
     const tocElement = document.getElementById('table-of-contents');
 
@@ -97,6 +98,7 @@ function generateTableOfContents() {
 
     tocHTML += '</ul>';
     tocElement.innerHTML = tocHTML;
+  }
 }
 
 // Call the function when the content is loaded
@@ -132,27 +134,11 @@ $(document).ready(function () {
 //   })
 // })
 
-function addItem() {
-  const newItem = `
-    <li>
-    <div id="show_item" class="flex items-center gap-3">
-    <div class="text-[#0D0E10] font-medium">VS</div>
-    <select class="bg-white border border-[#E9E9E9] rounded py-2 px-4 text-base text-[#646F79]">
-        <option selected>Select VPN</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-    </select>
-</div>
-    </li>
-  `;
-
-  const list = document.getElementById('myList');
-  list.innerHTML += newItem;
-}
 
 
-//test for iterating over child elements
+
+
+// select vpn compare start // 
 var langArray = [];
 $('.compareSelect-item option').each(function(){
   var img = $(this).attr("data-thumbnail");
@@ -166,34 +152,32 @@ $('.compare_listing').html(langArray);
 
 //Set the button value to the first el of the array
 $('.btn-select').html(langArray[0]);
-$('.btn-select').attr('value', 'en');
 
 //change button stuff on click
 $('.compare_listing li').click(function(){
    var img = $(this).find('img').attr("src");
-   var value = $(this).find('img').attr('value');
    var text = this.innerText;
    var item = '<li><img src="'+ img +'" alt="" /><span>'+ text +'</span></li>';
-  $('.btn-select').html(item);
-  $('.btn-select').attr('value', value);
-  $(".compare_listing").toggle();
-  //console.log(value);
+  $(this).parents('.showCompare-item').find('.btn-select').html(item);
+  $(this).parents('.showCompare-item').find('.compare_listing').toggle();
 });
 
 $(".btn-select").click(function(){
-        $(".compare_listing").toggle();
-    });
+  $(this).parents('.showCompare-item').find('.compare_listing').toggle();
+});
+// select vpn compare start // 
 
-//check local storage for the lang
-var sessionLang = localStorage.getItem('lang');
-if (sessionLang){
-  //find an item with value of sessionLang
-  var langIndex = langArray.indexOf(sessionLang);
-  $('.btn-select').html(langArray[langIndex]);
-  $('.btn-select').attr('value', sessionLang);
-} else {
-   var langIndex = langArray.indexOf('ch');
-  console.log(langIndex);
-  $('.btn-select').html(langArray[langIndex]);
-  // $('.btn-select').attr('value', 'en');
-}
+
+// add product 
+$(document).ready(function(){
+  // $(".product-box").addClass("hidden");
+  
+  $(".add-product").click(function(){
+    $(this).toggleClass("hidden").prev(".product-box").removeClass("hidden");
+  });
+
+  $(".product-box .close-icon").click(function(){
+    $(this).parent(".product-box").addClass("hidden").next(".add-product").removeClass('hidden');
+  });
+  
+});

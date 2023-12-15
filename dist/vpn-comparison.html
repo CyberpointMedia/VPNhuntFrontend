@@ -273,120 +273,83 @@
                       </ol>
                   </nav>
                     <div class="flex md:flex-row flex-col flex-wrap relative md:text-left">
-                        <div class="md:w-2/3 w-full">
+                        <div class="lg:w-2/3 w-full">
                             <h1 class="font-medium text-4xl text-black mb-3">
                                 VPN Comparison Tool
                             </h1>
                             <p class="text-base">
                                 Use the VPN comparison tool below to compare up to five VPNs side-by-side based on their pricing, speeds, security, logging policy, and more.
                             </p>
-                            <div class="my-10 max-w-xl">
+                            <div class="lg:my-10 my-10 md:mb-20 max-w-xl">
                                 <p class="font-medium text-base">Add a VPN to compare:</p>
-                                <div class="flex items-center gap-3 hidden">
-                                    <div class="vpnCompare">
-                                        <select class="compareSelect-item">
-                                            <option value="express" data-thumbnail="images/express-small-logo.svg">
-                                                ExpressVPN
-                                            </option>
-                                            <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
-                                                CyberGhost
-                                            </option>
-                                            <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
-                                                IPVanish
-                                            </option>
-                                            <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
-                                                Private Internet Access
-                                            </option>
-                                        </select>
-                                        <div class="showCompare-item w-52 text-base text-[#646F79]">
-                                            <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                            <ul class="compare_listing"></ul>
-                                        </div>
-                                    </div>
-                                    <div class="text-[#0D0E10] font-medium">VS</div>
-                                    <div class="vpnCompare">
-                                        <select class="compareSelect-item">
-                                            <option value="express" data-thumbnail="images/express-small-logo.svg">
-                                                ExpressVPN
-                                            </option>
-                                            <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
-                                                CyberGhost
-                                            </option>
-                                            <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
-                                                IPVanish
-                                            </option>
-                                            <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
-                                                Private Internet Access
-                                            </option>
-                                        </select>
-                                        <div class="showCompare-item w-52 text-base text-[#646F79]">
-                                            <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                            <ul class="compare_listing"></ul>
-                                        </div>
-                                    </div>
-                                </div>
                                 
-                                <div class="flex items-center gap-3 mt-5 ">
-                                    <ul id="myList" class="flex items-center gap-4">
-                                        <li>
-                                            <div id="show_item" class="flex items-center gap-3">
-                                                <div class="vpnCompare">
-                                                    <select class="compareSelect-item">
-                                                        <option value="express" data-thumbnail="images/express-small-logo.svg">
-                                                            ExpressVPN
-                                                        </option>
-                                                        <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
-                                                            CyberGhost
-                                                        </option>
-                                                        <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
-                                                            IPVanish
-                                                        </option>
-                                                        <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
-                                                            Private Internet Access
-                                                        </option>
-                                                    </select>
-                                                    <div class="showCompare-item w-52 text-base text-[#646F79]">
-                                                        <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                                        <ul class="compare_listing"></ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text-[#0D0E10] font-medium">VS</div>
-                                                <div class="vpnCompare">
-                                                    <select class="compareSelect-item">
-                                                        <option value="express" data-thumbnail="images/express-small-logo.svg">
-                                                            ExpressVPN
-                                                        </option>
-                                                        <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
-                                                            CyberGhost
-                                                        </option>
-                                                        <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
-                                                            IPVanish
-                                                        </option>
-                                                        <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
-                                                            Private Internet Access
-                                                        </option>
-                                                    </select>
-                                                    <div class="showCompare-item w-52 text-base text-[#646F79]">
-                                                        <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                                        <ul class="compare_listing"></ul>
-                                                    </div>
+                                <div class="flex flex-col md:flex-row items-center gap-3 mt-5 ">
+                                    <div class="flex flex-col md:flex-row items-center gap-3 md:w-auto w-full add-compare-row">
+                                        <div class="vpnCompare md:w-auto w-full">
+                                            <select class="compareSelect-item">
+                                                <option value="express" data-thumbnail="images/express-small-logo.svg">
+                                                    ExpressVPN
+                                                </option>
+                                                <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                    CyberGhost
+                                                </option>
+                                                <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                    IPVanish
+                                                </option>
+                                                <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                    Private Internet Access
+                                                </option>
+                                            </select>
+                                            <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
+                                                <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                                <ul class="compare_listing"></ul>
+                                            </div>
+                                        </div>
+                                        <div class="duplicate-content flex flex-col md:flex-row md:w-auto w-full items-center gap-3">
+                                            <div class="text-[#0D0E10] font-medium md:w-auto w-full text-center">VS</div>
+                                            <div class="vpnCompare md:w-auto w-full">
+                                                <select class="compareSelect-item">
+                                                    <option value="express" data-thumbnail="images/express-small-logo.svg">
+                                                        ExpressVPN
+                                                    </option>
+                                                    <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                        CyberGhost
+                                                    </option>
+                                                    <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                        IPVanish
+                                                    </option>
+                                                    <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                        Private Internet Access
+                                                    </option>
+                                                </select>
+                                                <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
+                                                    <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                                    <ul class="compare_listing"></ul>
                                                 </div>
                                             </div>
-                                        </li>
-                                    </ul>
-                                    <button class="border border-[#E9E9E9] w-10 h-10 bg-white text-center rounded add_item_btn" type="button" onclick="addItem()">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mx-auto">
+                                        </div>
+                                    </div>
+                                    <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded" type="button" id="add-compare">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mx-auto add-icon inline-block">
                                             <path d="M13 20L13 4C13 3.5 12.6 3 12 3C11.4 3 11 3.5 11 4L11 20C11 20.2652 11.1054 20.5196 11.2929 20.7071C11.4804 20.8946 11.7348 21 12 21C12.6 21 13 20.5 13 20Z" fill="#0D0E10"/>
                                             <path d="M4 13L20 13C20.5 13 21 12.6 21 12C21 11.4 20.5 11 20 11L4 11C3.73478 11 3.48043 11.1054 3.29289 11.2929C3.10536 11.4804 3 11.7348 3 12C3 12.6 3.5 13 4 13Z" fill="#0D0E10"/>
-                                            </svg>
+                                        </svg>
+                                        <span class="text-[#0D0E10] font-medium md:hidden inline-block ml-2">Add more</span>
+                                    </button>
+                                    <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded hidden" type="button" id="remove-compare">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 22 22" fill="none" class="remove-icon mx-auto inline-block">
+                                            <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"/>
+                                            <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"/>
+                                          </svg>
+                                          <span class="text-[#0D0E10] font-medium md:hidden inline-block ml-2">Cancel</span>
                                     </button>
                                 </div>
-                                <button class="bg-[#FF6961] text-white p-3 w-80 mx-auto text-center rounded mt-5">Compare Now</button>  
+                                <button class="bg-[#FF6961] text-white p-3 w-full md:w-80 mx-auto text-center rounded mt-5">Compare Now</button>  
                                 
                                   
                             </div>
                         </div>
-                        <div class="md:w-1/4 w-full md:absolute bottom-0 right-0 content-end">
+                        <div class="lg:w-1/4 w-full lg:absolute bottom-0 right-0 content-end hidden lg:block">
                             <img src="images/nord-vs-express.svg" alt="#" class="inline-block" />
                         </div>
                     </div> 
@@ -410,18 +373,47 @@
                                         <th class="py-2 px-3 text-base font-medium text-center border-0">&nbsp;</th>
 
                                         <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <p>ExpressVPN</p>
-                                            <img src="images/expressvpn-brand-logo1.svg" alt="#" class="mx-auto" />
-                                            <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            <div class="product-box p-5 relative">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
+                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                  </svg>
+                                                <p>NordVPN</p>
+                                                <img src="images/express-vpn-brand-logo.svg" alt="#" class="mx-auto my-2" />
+                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            </div>
+                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                                <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
+                                                <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
+                                              </svg>Read more</a>
                                         </th>
 
                                         <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <p>NordVPN</p>
-                                            <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto" />
-                                            <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            <div class="product-box p-5 relative hidden">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
+                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                  </svg>
+                                                <p>NordVPN</p>
+                                                <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
+                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            </div>
+                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                                <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
+                                                <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
+                                              </svg>Read more</a>
                                         </th>
                                         <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                            <div class="product-box p-5 relative hidden">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
+                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                  </svg>
+                                                <p>NordVPN</p>
+                                                <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
+                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
+                                            </div>
+                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
                                                 <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
                                                 <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
                                               </svg>Read more</a>
@@ -1180,6 +1172,29 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/custom-script.js" type="text/javascript"></script>
+
+    <script>
+
+$("#add-compare").click(function() {
+    //  $(this).toggleClass("show-compare").siblings().removeClass("show-compare");
+    $(this).addClass("hidden").next("#remove-compare").removeClass("hidden");
+  // Get the div to duplicate
+  const originalDiv = $(".duplicate-content");
+
+  // Clone the div with its content
+  const cloneDiv = originalDiv.clone(true);
+
+  // Add the clone after the original div
+  originalDiv.after(cloneDiv);
+});
+
+$("#remove-compare").click(function() {
+    $(".add-compare-row").children(".duplicate-content:nth-child(2)").remove();
+
+    // Clone the div with its content
+    $(this).addClass("hidden").prev("#add-compare").removeClass("hidden");
+});
+    </script>
 </body>
 
 </html>
