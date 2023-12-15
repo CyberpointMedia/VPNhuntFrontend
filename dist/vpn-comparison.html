@@ -282,43 +282,108 @@
                             </p>
                             <div class="my-10 max-w-xl">
                                 <p class="font-medium text-base">Add a VPN to compare:</p>
-                                <form id="add-compare-list">
-                                    <div class="flex items-center gap-3 mt-5 ">
-                                        <ul id="myList" class="flex items-center gap-4">
-                                            <li>
-                                                <div id="show_item" class="flex items-center gap-3">
-                                                    <select class="w-52 bg-white border border-[#E9E9E9] rounded py-2 px-4 text-base text-[#646F79] relative">
-                                                        <option selected>Select VPN</option>
-                                                        <option value="ExpressVPN" data-icon="images/express-small-logo.svg">
-                                                            <img src="images/express-small-logo.svg"/>
+                                <div class="flex items-center gap-3 hidden">
+                                    <div class="vpnCompare">
+                                        <select class="compareSelect-item">
+                                            <option value="express" data-thumbnail="images/express-small-logo.svg">
+                                                ExpressVPN
+                                            </option>
+                                            <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                CyberGhost
+                                            </option>
+                                            <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                IPVanish
+                                            </option>
+                                            <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                Private Internet Access
+                                            </option>
+                                        </select>
+                                        <div class="showCompare-item w-52 text-base text-[#646F79]">
+                                            <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                            <ul class="compare_listing"></ul>
+                                        </div>
+                                    </div>
+                                    <div class="text-[#0D0E10] font-medium">VS</div>
+                                    <div class="vpnCompare">
+                                        <select class="compareSelect-item">
+                                            <option value="express" data-thumbnail="images/express-small-logo.svg">
+                                                ExpressVPN
+                                            </option>
+                                            <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                CyberGhost
+                                            </option>
+                                            <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                IPVanish
+                                            </option>
+                                            <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                Private Internet Access
+                                            </option>
+                                        </select>
+                                        <div class="showCompare-item w-52 text-base text-[#646F79]">
+                                            <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                            <ul class="compare_listing"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center gap-3 mt-5 ">
+                                    <ul id="myList" class="flex items-center gap-4">
+                                        <li>
+                                            <div id="show_item" class="flex items-center gap-3">
+                                                <div class="vpnCompare">
+                                                    <select class="compareSelect-item">
+                                                        <option value="express" data-thumbnail="images/express-small-logo.svg">
                                                             ExpressVPN
                                                         </option>
-                                                        <option value="CyberGhost">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
-                                                                <path d="M28.7904 14.5C28.7904 6.60742 22.3913 0.208313 14.4987 0.208313C6.60614 0.208313 0.207031 6.60742 0.207031 14.5C0.207031 22.3925 6.60614 28.7916 14.4987 28.7916C22.3888 28.7843 28.783 22.3901 28.7904 14.5Z" fill="#FFCC00"/>
-                                                                <path d="M21.3823 12.1192C21.3823 8.21819 18.2219 5.0553 14.3208 5.0553C10.4197 5.0553 7.25686 8.21574 7.25686 12.1168C7.25686 12.1168 7.25686 12.1168 7.25686 12.1192C7.25686 16.0252 5.6143 23.0769 9.52025 23.0769C26.9088 23.0745 21.3823 16.0252 21.3823 12.1192ZM12.7589 16.1914C11.307 16.1914 10.1411 14.5489 10.1411 12.5201C10.1411 10.4938 11.307 8.85125 12.7614 8.85125C14.2157 8.85125 15.3816 10.4938 15.3816 12.5201C15.3816 14.5464 14.1888 16.1914 12.7589 16.1914ZM18.8329 14.9766C17.689 14.9766 16.7602 13.6665 16.7602 12.0704C16.7602 10.4743 17.689 9.16412 18.8329 9.16412C19.9769 9.16412 20.9057 10.4743 20.9057 12.0704C20.9057 13.6909 19.9769 14.9766 18.8329 14.9766Z" fill="#323232"/>
-                                                                </svg>CyberGhost
+                                                        <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                            CyberGhost
+                                                        </option>
+                                                        <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                            IPVanish
+                                                        </option>
+                                                        <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                            Private Internet Access
                                                         </option>
                                                     </select>
-                                                    <div class="text-[#0D0E10] font-medium">VS</div>
-                                                    <select class="w-52 bg-white border border-[#E9E9E9] rounded py-2 px-4 text-base text-[#646F79]">
-                                                        <option selected>Select VPN</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                        <option>6</option>
-                                                    </select>
+                                                    <div class="showCompare-item w-52 text-base text-[#646F79]">
+                                                        <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                                        <ul class="compare_listing"></ul>
+                                                    </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                        <button class="border border-[#E9E9E9] w-10 h-10 bg-white text-center rounded add_item_btn" type="button" onclick="addItem()">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mx-auto">
-                                                <path d="M13 20L13 4C13 3.5 12.6 3 12 3C11.4 3 11 3.5 11 4L11 20C11 20.2652 11.1054 20.5196 11.2929 20.7071C11.4804 20.8946 11.7348 21 12 21C12.6 21 13 20.5 13 20Z" fill="#0D0E10"/>
-                                                <path d="M4 13L20 13C20.5 13 21 12.6 21 12C21 11.4 20.5 11 20 11L4 11C3.73478 11 3.48043 11.1054 3.29289 11.2929C3.10536 11.4804 3 11.7348 3 12C3 12.6 3.5 13 4 13Z" fill="#0D0E10"/>
-                                                </svg>
-                                        </button>
-                                    </div>
-                                    <button class="bg-[#FF6961] text-white p-3 w-[29rem] mx-auto text-center rounded mt-5">Compare Now</button>                              
-                                </form>
+                                                <div class="text-[#0D0E10] font-medium">VS</div>
+                                                <div class="vpnCompare">
+                                                    <select class="compareSelect-item">
+                                                        <option value="express" data-thumbnail="images/express-small-logo.svg">
+                                                            ExpressVPN
+                                                        </option>
+                                                        <option value="cyberGhost" data-thumbnail="images/cyber-ghost-brand-logo.svg">
+                                                            CyberGhost
+                                                        </option>
+                                                        <option value="IPVanish" data-thumbnail="images/ip-vanish-small-logo.svg">
+                                                            IPVanish
+                                                        </option>
+                                                        <option value="private-internet-access" data-thumbnail="images/private-internet-small-logo.png">
+                                                            Private Internet Access
+                                                        </option>
+                                                    </select>
+                                                    <div class="showCompare-item w-52 text-base text-[#646F79]">
+                                                        <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                                        <ul class="compare_listing"></ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="border border-[#E9E9E9] w-10 h-10 bg-white text-center rounded add_item_btn" type="button" onclick="addItem()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mx-auto">
+                                            <path d="M13 20L13 4C13 3.5 12.6 3 12 3C11.4 3 11 3.5 11 4L11 20C11 20.2652 11.1054 20.5196 11.2929 20.7071C11.4804 20.8946 11.7348 21 12 21C12.6 21 13 20.5 13 20Z" fill="#0D0E10"/>
+                                            <path d="M4 13L20 13C20.5 13 21 12.6 21 12C21 11.4 20.5 11 20 11L4 11C3.73478 11 3.48043 11.1054 3.29289 11.2929C3.10536 11.4804 3 11.7348 3 12C3 12.6 3.5 13 4 13Z" fill="#0D0E10"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <button class="bg-[#FF6961] text-white p-3 w-80 mx-auto text-center rounded mt-5">Compare Now</button>  
+                                
+                                  
                             </div>
                         </div>
                         <div class="md:w-1/4 w-full md:absolute bottom-0 right-0 content-end">

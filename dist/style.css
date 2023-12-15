@@ -1123,6 +1123,10 @@ video {
   width: 100%;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .min-w-\[290px\] {
   min-width: 290px;
 }
@@ -1657,6 +1661,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1947,6 +1956,11 @@ video {
 .hover\:border-red-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#E9E9E9\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(233 233 233 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#D8423A\]:hover {
