@@ -1185,11 +1185,11 @@ $("#add-compare").click(function() {
   const cloneDiv = originalDiv.clone(true);
 
   // Add the clone after the original div
-  originalDiv.after(cloneDiv);
+  originalDiv.before(cloneDiv).addClass("duplicate-content2");
 });
 
 $("#remove-compare").click(function() {
-    $(".add-compare-row").children(".duplicate-content:nth-child(2)").remove();
+    $(".add-compare-row").children(".duplicate-content2").remove();
 
     // Clone the div with its content
     $(this).addClass("hidden").prev("#add-compare").removeClass("hidden");
