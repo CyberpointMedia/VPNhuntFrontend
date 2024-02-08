@@ -7,7 +7,7 @@
     <title>vpnHunt</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="custom.css" />
 </head>
@@ -15,44 +15,40 @@
 <body>
     <!-- header start here -->
     <header class="relative">
-        <div id="topbar" class="topbar py-2 bg-gray-light-100 duration-500">
+        <div id="topbar" class="py-2 duration-500 topbar bg-gray-light-100">
             <div class="container">
-                <div class="flex flex-wrap justify-between items-center text-center md:text-left">
-                    <p class="text-sm text-center lg:text-left w-full lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
-                    <p class="text-sm md-sm-none">Check out our video tutorials on <a href="javascript:void(0);" class="font-medium"><img src="images/youtube-icon.svg" alt="#" class="inline-block" />Youtube</a></p>
+                <div class="flex flex-wrap items-center justify-between text-center md:text-left">
+                    <p class="w-full text-sm text-center lg:text-left lg:w-2/3">We may receive a commission for purchases made through our links.<a href="javascript:void(0);" class="font-medium">Learn More</a></p>
+                    <p class="text-sm md-sm-none">Check out our video tutorials on
+                        <a href="javascript:void(0);" class="font-medium"><img src="images/youtube-icon.svg" alt="#" class="inline-block" />Youtube</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <nav
-            class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200 drop-shadow-md">
+        <nav class="top-0 z-20 w-full bg-white border-b border-gray-200 start-0 drop-shadow-md">
             <div class="container">
                 <div class="flex flex-wrap items-center justify-between py-4">
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
                     </a>
-                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <div class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
                         <button id="top-search" class="mr-2 sm:mr-3 lg:ml-0"><img src="images/search.svg" alt="search"></button>
-                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button"
-                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 lg:hidden focus:outline-none"
-                            aria-controls="navbar-sticky" aria-expanded="false">
+                        <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-black-500 lg:hidden focus:outline-none" aria-controls="navbar-sticky" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 17 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
-                            <svg id="menu-icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg id="menu-icon-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
                         </button>
                     </div>
-                    <div class="items-center justify-between duration-500 w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
-                        <ul
-                            class="flex flex-col p-4 lg:p-0 font-medium lg:space-x-10 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                    <div class="items-center justify-between w-full duration-500 lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                        <ul class="flex flex-col p-4 font-medium lg:p-0 lg:space-x-10 rtl:space-x-reverse lg:flex-row lg:mt-0">
                             <li class="relative group">
-                                <a href="best-vpn.html"
-                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400"
-                                    aria-current="page">Best VPN
+                                <a href="best-vpn.html" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400" aria-current="page">Best VPN
                                 </a>
                                 <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -60,109 +56,95 @@
                                 <!-- mega menu start -->
                                 <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[290px] lg:transform">
                                     <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
-                                    <div
-                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
-                                    </div>
+                                        <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                        </div>
 
-                                    <div class="relative z-10">
-                                        <div class="">
-                                            <p class="text-black font-bold text-base">Popular by Category</p>
-                                            <ul class="mt-3 text-[15px]">
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                        <div class="relative z-10">
+                                            <div class="">
+                                                <p class="text-base font-bold text-black">Popular by Category</p>
+                                                <ul class="mt-3 text-[15px]">
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Best VPNs For Torrenting
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Best Free VPNs
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Best VPNs For Gaming
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Best VPNs Free Trials
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Fastest VPNs
                                                 </a>
-                                            </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <!-- mega menu end -->
                             </li>
                             <li class="relative group">
-                                <a href="vpn-reviews.html"
-                                    class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Reviews
+                                <a href="vpn-reviews.html" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400">VPN Reviews
                                 </a>
-                                    <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                                     </svg>
-                                    <!-- mega menu start -->
+                                <!-- mega menu start -->
                                 <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[290px] lg:transform">
                                     <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
-                                    <div
-                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
-                                    </div>
+                                        <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                        </div>
 
-                                    <div class="relative z-10">
-                                        <div class="">
-                                            <p class="text-black font-bold text-base">VPN Reviews</p>
-                                            <ul class="mt-3 text-[15px]">
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                        <div class="relative z-10">
+                                            <div class="">
+                                                <p class="text-base font-bold text-black">VPN Reviews</p>
+                                                <ul class="mt-3 text-[15px]">
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 ExpressVPN
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 CyberGhost VPN
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 Private Internet Access
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 IPVanish
                                                 </a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                 NordVPN
                                                 </a>
-                                            </li>
-                                            </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <!-- mega menu end -->
                             </li>
                             <li class="relative group">
-                                <a href="vpn-comparison.html"
-                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Compare VPN
+                                <a href="vpn-comparison.html" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400">Compare VPN
                                 </a>
                                 <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[24px] lg:top-[5px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -170,71 +152,62 @@
                                 <!-- mega menu start -->
                                 <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 md:min-w-[560px] min-w-[290px] lg:transform">
                                     <div class="relative top-0 lg:top-[22px] p-6 bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
-                                    <div
-                                        class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
-                                    </div>
+                                        <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                        </div>
 
-                                    <div class="relative z-10">
-                                        <div class="">
-                                            <p class="text-black font-bold text-base">Popular Compare</p>
-                                            <div class="md:grid md:grid-cols-2 gap-4">
-                                                <div class="">
-                                                    <ul class="mt-3 text-[15px]">
-                                                        <li>
-                                                            <a href="#"
-                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                        <div class="relative z-10">
+                                            <div class="">
+                                                <p class="text-base font-bold text-black">Popular Compare</p>
+                                                <div class="gap-4 md:grid md:grid-cols-2">
+                                                    <div class="">
+                                                        <ul class="mt-3 text-[15px]">
+                                                            <li>
+                                                                <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                             ExpressVPN vs. NordVPN
                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"
-                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                             ExpressVPN vs. CyberGhost VPN
                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"
-                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                             Express VPN vs. Private Internet Access
                                                             </a>
-                                                        </li>
+                                                            </li>
                                                         </ul>
-                                                </div>
-                                                <div class="">
-                                                    <ul class="mt-3 text-[15px]">
-                                                        <li>
-                                                            <a href="#"
-                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                    </div>
+                                                    <div class="">
+                                                        <ul class="mt-3 text-[15px]">
+                                                            <li>
+                                                                <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                             ExpressVPN vs. Surfshark
                                                             </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"
-                                                            class="block p-2 -mx-2 transition ease-in-out duration-300 text-black-200 hover:text-red-400 font-normal text-sm">
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="block p-2 -mx-2 text-sm font-normal transition duration-300 ease-in-out text-black-200 hover:text-red-400">
                                                             ExpressVPN vs. IPVanish
                                                             </a>
-                                                        </li>
+                                                            </li>
                                                         </ul>
+                                                    </div>
                                                 </div>
+                                                <a href="javascript:void(0);" class="font-medium text-[#0D0E10] py-2 text-center border border-[#0D0E10] w-full rounded block hover:bg-[#D8423A] mt-5">Compare Yourself Now!</a>
                                             </div>
-                                            <a href="javascript:void(0);" class="font-medium text-[#0D0E10] py-2 text-center border border-[#0D0E10] w-full rounded block hover:bg-[#D8423A] mt-5">Compare Yourself Now!</a>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                                 <!-- mega menu end -->
                             </li>
                             <li>
-                                <a href="#"
-                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">VPN Setup</a>
+                                <a href="#" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400">VPN Setup</a>
                             </li>
                             <li>
-                                <a href="guides.html"
-                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Guides</a>
+                                <a href="guides.html" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400">Guides</a>
                             </li>
                             <li>
-                                <a href="#"
-                                class="block p-3 text-black font-medium text-sm lg:p-0 hover:text-red-400">Blogs</a>
+                                <a href="#" class="block p-3 text-sm font-medium text-black lg:p-0 hover:text-red-400">Blogs</a>
                             </li>
                         </ul>
                     </div>
@@ -243,17 +216,17 @@
         </nav>
 
         <!-- main search start here -->
-        <div id="main-search" class="drop-shadow-lg p-4 bg-white duration-500">    
-            <form class="flex items-center">   
+        <div id="main-search" class="p-4 duration-500 bg-white drop-shadow-lg">
+            <form class="flex items-center">
                 <div class="relative w-full">
                     <button type="submit" class="absolute inset-y-0 start-0 flex items-center p-2.5 text-sm font-medium text-black focus:outline-none hover-text focus-text">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                         </svg>
-                    </button>   
+                    </button>
                     <input type="text" id="simple-search" class="bg-gray-50 text-gray-900 text-sm block w-full ps-10 p-2.5 focus:outline-none" placeholder="Search here..." required>
                 </div>
-                <svg id="search-close" class="h-6 w-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg id="search-close" class="w-6 h-6 cursor-pointer hover-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </form>
@@ -263,30 +236,31 @@
     <!-- header end here -->
 
     <!-- top banner start here -->
-    <section class="top-bg bg-center bg-cover" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
+    <section class="bg-center bg-cover top-bg" style="background-image: url('images/contact-bg.png'); background-size: cover; background-repeat: no-repeat;">
         <div>
             <div class="container">
-                <nav class="md:mb-16 mb-10 pt-6" aria-label="breadcrumb">
-                    <ol class="flex space-x-2 items-center">
-                        <li class="text-black flex space-x-1 items-center"><a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
-                        <li class="text-red-400 text-sm" aria-current="page">Comparison</li>
-                      </ol>
-                  </nav>
-                    <div class="flex md:flex-row flex-col flex-wrap relative md:text-left">
-                        <div class="lg:w-2/3 w-full">
-                            <h1 class="font-medium text-4xl text-black mb-3">
-                                VPN Comparison Tool
-                            </h1>
-                            <p class="text-base">
-                                Use the VPN comparison tool below to compare up to five VPNs side-by-side based on their pricing, speeds, security, logging policy, and more.
-                            </p>
-                            <div class="lg:my-10 my-10 md:mb-20 max-w-xl">
-                                <p class="font-medium text-base">Add a VPN to compare:</p>
-                                
-                                <div class="flex flex-col md:flex-row items-center gap-3 mt-5 ">
-                                    <div class="flex flex-col md:flex-row items-center gap-3 md:w-auto w-full add-compare-row">
-                                        <div class="vpnCompare md:w-auto w-full">
-                                            <select class="compareSelect-item">
+                <nav class="pt-6 mb-10 md:mb-16" aria-label="breadcrumb">
+                    <ol class="flex items-center space-x-2">
+                        <li class="flex items-center space-x-1 text-black">
+                            <a href="index.html"><img src="images/home-icon.svg" /></a><span>/</span></li>
+                        <li class="text-sm text-red-400" aria-current="page">Comparison</li>
+                    </ol>
+                </nav>
+                <div class="relative flex flex-col flex-wrap md:flex-row md:text-left">
+                    <div class="w-full lg:w-2/3">
+                        <h1 class="mb-3 text-4xl font-medium text-black">
+                            VPN Comparison Tool
+                        </h1>
+                        <p class="text-base">
+                            Use the VPN comparison tool below to compare up to five VPNs side-by-side based on their pricing, speeds, security, logging policy, and more.
+                        </p>
+                        <div class="max-w-xl my-10 lg:my-10 md:mb-20">
+                            <p class="text-base font-medium">Add a VPN to compare:</p>
+
+                            <div class="flex flex-col items-center gap-3 mt-5 md:flex-row ">
+                                <div class="flex flex-col items-center w-full gap-3 md:flex-row md:w-auto add-compare-row">
+                                    <div class="w-full vpnCompare md:w-auto">
+                                        <select class="compareSelect-item">
                                                 <option value="express" data-thumbnail="images/express-small-logo.svg">
                                                     ExpressVPN
                                                 </option>
@@ -300,15 +274,15 @@
                                                     Private Internet Access
                                                 </option>
                                             </select>
-                                            <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
-                                                <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                                <ul class="compare_listing"></ul>
-                                            </div>
+                                        <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
+                                            <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                            <ul class="compare_listing"></ul>
                                         </div>
-                                        <div class="duplicate-content flex flex-col md:flex-row md:w-auto w-full items-center gap-3">
-                                            <div class="text-[#0D0E10] font-medium md:w-auto w-full text-center">VS</div>
-                                            <div class="vpnCompare md:w-auto w-full">
-                                                <select class="compareSelect-item">
+                                    </div>
+                                    <div class="flex flex-col items-center w-full gap-3 duplicate-content md:flex-row md:w-auto">
+                                        <div class="text-[#0D0E10] font-medium md:w-auto w-full text-center">VS</div>
+                                        <div class="w-full vpnCompare md:w-auto">
+                                            <select class="compareSelect-item">
                                                     <option value="express" data-thumbnail="images/express-small-logo.svg">
                                                         ExpressVPN
                                                     </option>
@@ -322,602 +296,658 @@
                                                         Private Internet Access
                                                     </option>
                                                 </select>
-                                                <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
-                                                    <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
-                                                    <ul class="compare_listing"></ul>
-                                                </div>
+                                            <div class="showCompare-item md:w-48 w-full text-base text-[#646F79]">
+                                                <button class="btn-select bg-white border border-[#E9E9E9] w-full py-2 px-1 rounded relative items-center" value=""></button>
+                                                <ul class="compare_listing"></ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded" type="button" id="add-compare">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="mx-auto add-icon inline-block">
+                                </div>
+                                <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded" type="button" id="add-compare">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="inline-block mx-auto add-icon">
                                             <path d="M13 20L13 4C13 3.5 12.6 3 12 3C11.4 3 11 3.5 11 4L11 20C11 20.2652 11.1054 20.5196 11.2929 20.7071C11.4804 20.8946 11.7348 21 12 21C12.6 21 13 20.5 13 20Z" fill="#0D0E10"/>
                                             <path d="M4 13L20 13C20.5 13 21 12.6 21 12C21 11.4 20.5 11 20 11L4 11C3.73478 11 3.48043 11.1054 3.29289 11.2929C3.10536 11.4804 3 11.7348 3 12C3 12.6 3.5 13 4 13Z" fill="#0D0E10"/>
                                         </svg>
                                         <span class="text-[#0D0E10] font-medium md:hidden inline-block ml-2">Add more</span>
                                     </button>
-                                    <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded hidden" type="button" id="remove-compare">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 22 22" fill="none" class="remove-icon mx-auto inline-block">
+                                <button class="border border-[#E9E9E9] md:w-10 w-full h-10 bg-white text-center rounded hidden" type="button" id="remove-compare">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 22 22" fill="none" class="inline-block mx-auto remove-icon">
                                             <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"/>
                                             <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"/>
                                           </svg>
                                           <span class="text-[#0D0E10] font-medium md:hidden inline-block ml-2">Cancel</span>
                                     </button>
-                                </div>
-                                <button class="bg-[#FF6961] text-white p-3 w-full md:w-80 mx-auto text-center rounded mt-5">Compare Now</button>  
-                                
-                                  
                             </div>
+                            <button class="bg-[#FF6961] text-white p-3 w-full md:w-80 mx-auto text-center rounded mt-5">Compare Now</button>
+
+
                         </div>
-                        <div class="lg:w-1/4 w-full lg:absolute bottom-0 right-0 content-end hidden lg:block">
-                            <img src="images/nord-vs-express.svg" alt="#" class="inline-block" />
-                        </div>
-                    </div> 
+                    </div>
+                    <div class="bottom-0 right-0 content-end hidden w-full lg:w-1/4 lg:absolute lg:block">
+                        <img src="images/nord-vs-express.svg" alt="#" class="inline-block" />
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </section>
     <!-- top banner end here -->
 
     <!-- content section start here -->
-    <section class="our-expertise-sec md:py-14 py-5">
+    <section class="py-5 our-expertise-sec md:py-14">
         <div class="container">
-            <div class="flex relative items-start px-0 md:px-10 lg:px-0">
+            <div class="relative flex items-start px-0 md:px-10 lg:px-0">
                 <div class="w-full text-left">
                     <!-- right content section start -->
 
                     <div class="right_content_sec">
-                        <div class="overflow-x-auto md:mb-14 mb-8 mt-6">
-                            <table class="w-auto table ">
-                                <thead>
-                                    <tr>
-                                        <th class="py-2 px-3 text-base font-medium text-center border-0">&nbsp;</th>
+                        <div class="mt-6 mb-8 overflow-hidden md:mb-14">
+                            <div class="w-full overflow-x-auto border table-wrap">
+                                <table class="w-full fixed-heading">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="px-3 py-2 text-base font-medium text-center border-0">&nbsp;</th>
 
-                                        <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <div class="product-box p-5 relative">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
-                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
-                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
-                                                  </svg>
-                                                <p>NordVPN</p>
-                                                <img src="images/express-vpn-brand-logo.svg" alt="#" class="mx-auto my-2" />
-                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
-                                            </div>
-                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
-                                                <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
-                                                <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
-                                              </svg>Read more</a>
-                                        </th>
-
-                                        <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <div class="product-box p-5 relative hidden">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
-                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
-                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
-                                                  </svg>
-                                                <p>NordVPN</p>
-                                                <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
-                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
-                                            </div>
-                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
-                                                <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
-                                                <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
-                                              </svg>Read more</a>
-                                        </th>
-                                        <th class="py-2 px-3 text-base font-medium text-center border">
-                                            <div class="product-box p-5 relative hidden">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="close-icon mx-auto absolute right-0 top-0">
-                                                    <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
-                                                    <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
-                                                  </svg>
-                                                <p>NordVPN</p>
-                                                <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
-                                                <a href="javascript:void(0);" class="btn-bg-orange-500 duration-500 rounded text-white font-medium py-1 px-3 inline-block">Visit Site</a>
-                                            </div>
-                                            <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
-                                                <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
-                                                <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
-                                              </svg>Read more</a>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Overall Rating <img src="images/question-mark.svg" class="inline-block" /></div></td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            <div class="flex items-center mb-3 justify-center">
-                                                <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
-                                                    <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                            <th scope="col" class="px-3 py-2 text-base font-medium text-center border">
+                                                <div class="relative p-5 product-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="absolute top-0 right-0 mx-auto close-icon">
+                                                        <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                        <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                      </svg>
+                                                    <p>NordVPN</p>
+                                                    <img src="images/express-vpn-brand-logo.svg" alt="#" class="mx-auto my-2" />
+                                                    <a href="javascript:void(0);" class="inline-block px-3 py-1 font-medium text-white duration-500 rounded btn-bg-orange-500">Visit Site</a>
                                                 </div>
-                                                <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i></div>
-                                            </div>
-                                        </td>
+                                                <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                                    <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
+                                                    <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
+                                                  </svg>Read more</a>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            <div class="flex items-center mb-3 justify-center">
-                                                <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
-                                                    <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+
+                                            <th scope="col" class="px-3 py-2 text-base font-medium text-center border">
+                                                <div class="relative hidden p-5 product-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="absolute top-0 right-0 mx-auto close-icon">
+                                                        <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                        <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                      </svg>
+                                                    <p>NordVPN</p>
+                                                    <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
+                                                    <a href="javascript:void(0);" class="inline-block px-3 py-1 font-medium text-white duration-500 rounded btn-bg-orange-500">Visit Site</a>
                                                 </div>
-                                                <div class="text-sm font-medium text-black">9.7<i class="text-xs ml-1 not-italic text-black">/10</i></div>
-                                            </div>
-                                        </td>
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                                <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                                    <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
+                                                    <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
+                                                  </svg>Read more</a>
+                                            </th>
+                                            <th scope="col" class="px-3 py-2 text-base font-medium text-center border">
+                                                <div class="relative hidden p-5 product-box">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none" class="absolute top-0 right-0 mx-auto close-icon">
+                                                        <path d="M6.46407 16.8336L16.835 6.46274C17.1591 6.13864 17.2239 5.55528 16.835 5.16637C16.4461 4.77747 15.8627 4.84228 15.5386 5.16637L5.16771 15.5373C4.9958 15.7092 4.89923 15.9423 4.89923 16.1855C4.89923 16.4286 4.9958 16.6617 5.16771 16.8336C5.55662 17.2225 6.13998 17.1577 6.46407 16.8336Z" fill="#0D0E10"></path>
+                                                        <path d="M16.8318 15.5373L6.46088 5.16637C6.13679 4.84228 5.55342 4.77746 5.16451 5.16637C4.7756 5.55528 4.84042 6.13864 5.16451 6.46273L15.5354 16.8336C15.7073 17.0055 15.9405 17.1021 16.1836 17.1021C16.4267 17.1021 16.6599 17.0055 16.8318 16.8336C17.2207 16.4447 17.1559 15.8614 16.8318 15.5373Z" fill="#0D0E10"></path>
+                                                      </svg>
+                                                    <p>NordVPN</p>
+                                                    <img src="images/brand-logo-nordvpn.svg" alt="#" class="mx-auto my-2" />
+                                                    <a href="javascript:void(0);" class="inline-block px-3 py-1 font-medium text-white duration-500 rounded btn-bg-orange-500">Visit Site</a>
+                                                </div>
+                                                <a href="javascript:void(0);" class="text-black rounded border border-[#E9E9E9] text-center py-3 w-36 inline-block add-product"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="inline-block mr-2">
+                                                    <path d="M11.9154 18.3333L11.9154 3.66667C11.9154 3.20833 11.5487 2.75 10.9987 2.75C10.4487 2.75 10.082 3.20833 10.082 3.66667L10.082 18.3333C10.082 18.5764 10.1786 18.8096 10.3505 18.9815C10.5224 19.1534 10.7556 19.25 10.9987 19.25C11.5487 19.25 11.9154 18.7917 11.9154 18.3333Z" fill="#0D0E10"/>
+                                                    <path d="M3.66667 11.9167L18.3333 11.9167C18.7917 11.9167 19.25 11.55 19.25 11C19.25 10.45 18.7917 10.0833 18.3333 10.0833L3.66667 10.0833C3.42355 10.0833 3.19039 10.1799 3.01849 10.3518C2.84658 10.5237 2.75 10.7569 2.75 11C2.75 11.55 3.20833 11.9167 3.66667 11.9167Z" fill="#0D0E10"/>
+                                                  </svg>Read more</a>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Overall Rating <img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
+
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                <div class="flex items-center justify-center mb-3">
+                                                    <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                                        <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                                    </div>
+                                                    <div class="text-sm font-medium text-black">9.7<i class="ml-1 text-xs not-italic text-black">/10</i></div>
+                                                </div>
+                                            </td>
+
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                <div class="flex items-center justify-center mb-3">
+                                                    <div class="w-1/4 bg-gray-200 rounded h-1.5 mx-3">
+                                                        <div class="bg-green-600 h-1.5 rounded" style="width: 88%"></div>
+                                                    </div>
+                                                    <div class="text-sm font-medium text-black">9.7<i class="ml-1 text-xs not-italic text-black">/10</i></div>
+                                                </div>
+                                            </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Expert Review<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
+
+                                            <td class="px-3 py-2 text-sm text-center border">
+                                                <a href="javascript:void(0);" class="font-medium text-red-400">ExpressVPN Review</a>
+                                            </td>
+
+                                            <td class="px-3 py-2 text-sm text-center border">
+                                                <a href="javascript:void(0);" class="font-medium text-red-400">CyberGhost Review</a>
+                                            </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Pricing</th>
+
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Cheapest Price<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
+
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                $6.67/mo over 15 Months
+                                            </td>
+
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                $6.67/mo over 15 Months
+                                            </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Expert Review<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Pay Monthly Price<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-sm text-center border">
-                                            <a href="javascript:void(0);" class="text-red-400 font-medium">ExpressVPN Review</a>
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">$12.95/mo</td>
 
-                                        <td class="py-2 px-3 text-sm text-center border">
-                                            <a href="javascript:void(0);" class="text-red-400 font-medium">CyberGhost Review</a>
-                                        </td>
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">$12.95/mo</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Pricing</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Free Trial<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">N/A</td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">N/A</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Cheapest Price<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            $6.67/mo over 15 Months
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Money-Back Guarantee<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            $6.67/mo over 15 Months
-                                        </td>
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">30 days </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Pay Monthly Price<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">30 days</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">$12.95/mo</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">$12.95/mo</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Data Cap<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">Unlimited</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Free Trial<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">Unlimited</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">N/A</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">N/A</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Security & Privacy</th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Money-Back Guarantee<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">30 days </td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">30 days</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Loggin Policy<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">No Identifying Data</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Data Cap<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">No Identifying Data</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">Unlimited</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">Unlimited</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Data Leaks<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">No Leak</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Security & Privacy</td>
+                                            <td class="px-3 py-2 text-base text-center border">No Leak</td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Encryption<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border ">chacha20, AES-256</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Loggin Policy<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">chacha20, AES-256</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">No Identifying Data</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">No Identifying Data</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Jurisdiction<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">British Virgin Islands (Privacy Haven)</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Data Leaks<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">British Virgin Islands (Privacy Haven)</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">No Leak</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">No Leak</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Speed & Servers</th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Encryption<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                        <td class="py-2 px-3 text-base text-center border ">chacha20, AES-256</td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">chacha20, AES-256</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Average Local Download Speed<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">97Mbps</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Jurisdiction<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">97Mbps</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">British Virgin Islands (Privacy Haven)</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">British Virgin Islands (Privacy Haven)</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Servers<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">3,000</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Speed & Servers</td>
+                                            <td class="px-3 py-2 text-base text-center border">3,000</td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">IP Addresses<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">3,000+</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Average Local Download Speed<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">3,000+</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">97Mbps</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">97Mbps</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Countries<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                94
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Servers<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                94
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">3,000</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">3,000</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Streaming & P2P</th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">IP Addresses<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">3,000+</td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">3,000+</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">US Netflix<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Countries<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            94
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            94
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Streaming Services Unblocked
+                                                    <img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                All 4, Amazon Prime Video, Disney+, HBO Max, Hulu, ITV Hub, Netflix,
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Streaming & P2P</td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                All 4, Amazon Prime Video, Disney+, HBO Max, Hulu, ITV Hub, Netflix,
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Torrenting<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Unlimited
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">US Netflix<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Unlimited
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Compatibility</th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Streaming Services
-                                            Unblocked<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            All 4, Amazon Prime Video, Disney+, HBO Max, Hulu, ITV Hub, Netflix,
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Simultaneous Connections
+                                                    <img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            All 4, Amazon Prime Video, Disney+, HBO Max, Hulu, ITV Hub, Netflix,
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                8
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                8
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Torrenting<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Unlimited
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Native App Support<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Unlimited
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Microsoft Windows, macOS, iOS, Android, Linux, Router
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Compatibility</td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Microsoft Windows, macOS, iOS, Android, Linux, Router
+                                            </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Compatible via Router<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Apple TV, Amazon Fire TV, Android TV, Chromecasr, Nintendo, PlayStation, Roku, Smart TV, Xbox
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Apple TV, Amazon Fire TV, Android TV, Chromecasr, Nintendo, PlayStation, Roku, Smart TV, Xbox
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Simultaneous
-                                            Connections<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            8
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Smart DNS<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            8
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Native App Support<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Microsoft Windows, macOS, iOS, Android, Linux, Router
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-medium text-left border bg-gray-light-200">Additional Info</th>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Microsoft Windows, macOS, iOS, Android, Linux, Router
-                                        </td>
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Compatible via Router<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Apple TV, Amazon Fire TV, Android TV, Chromecasr, Nintendo, PlayStation, Roku, Smart TV, Xbox
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Apple TV, Amazon Fire TV, Android TV, Chromecasr, Nintendo, PlayStation, Roku, Smart TV, Xbox
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Kill Switch<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Smart DNS<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Browser Extensions<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Chrome, Edge, Firefox
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base font-medium text-left border bg-gray-light-200">Additional Info</td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Chrome, Edge, Firefox
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Works in China<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border bg-gray-light-200">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Kill Switch<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                Yes
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
+                                        <tr>
+                                            <th scope="row" class="px-3 py-2 text-base font-normal text-left border">
+                                                <div class="flex items-center justify-between">Support<img src="images/question-mark.svg" class="inline-block" /></div>
+                                            </th>
 
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                24/7 Live Chat
+                                            </td>
 
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Browser Extensions<img src="images/question-mark.svg" class="inline-block" /></div></td>
+                                            <td class="px-3 py-2 text-base text-center border">
+                                                24/7 Live Chat
+                                            </td>
 
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Chrome, Edge, Firefox
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Chrome, Edge, Firefox
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Works in China<img src="images/question-mark.svg" class="inline-block" /></div></td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            Yes
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="py-2 px-3 text-base text-left border"><div class="items-center justify-between flex">Support<img src="images/question-mark.svg" class="inline-block" /></div></td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            24/7 Live Chat
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">
-                                            24/7 Live Chat
-                                        </td>
-
-                                        <td class="py-2 px-3 text-base text-center border">&nbsp;</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            <td class="px-3 py-2 text-base text-center border">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="relative">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">Most popular comparisons</h2>
-                            <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 mb-20">
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                            <h2 class="mb-5 text-2xl font-medium text-black lg:text-3xl">Most popular comparisons</h2>
+                            <div class="grid grid-cols-1 gap-3 mb-20 lg:grid-cols-2">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white border rounded text-center py-1 px-3 mt-3 comparisons-hover">
+                                <div class="flex items-center px-3 py-1 mt-3 text-center bg-white border rounded comparisons-hover">
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo1.png" alt="#">
                                     </div>
                                     <div class="flex-1">
-                                        <div class="font-normal text-sm">VS.</div>
+                                        <div class="text-sm font-normal">VS.</div>
                                     </div>
                                     <div class="flex-1">
                                         <img class="mx-auto" src="images/compare-logo2.png" alt="#">
@@ -926,74 +956,75 @@
                             </div>
                         </div>
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black mb-5">How to Choose the Right VPN</h2>
+                            <h2 class="mb-5 text-2xl font-medium text-black lg:text-3xl">How to Choose the Right VPN</h2>
                             <p>
-                                There’s a lot of information to take in when comparing VPN services, and not all of it will be 100% relevant to you. If you’re just looking for a VPN that excels in all categories, take a look at our recommendations for <a href="javascript:void(0);" class="text-black underline">the best VPNs overall</a>.
+                                There’s a lot of information to take in when comparing VPN services, and not all of it will be 100% relevant to you. If you’re just looking for a VPN that excels in all categories, take a look at our recommendations for
+                                <a href="javascript:void(0);" class="text-black underline">the best VPNs overall</a>.
                                 <br>
-                                <br>
-                                If you’re using our tool to weigh up between a few VPNs, we want to help you make a responsible and informed buying decision. To help you do this, here’s a more detailed explanation of the attributes included in the comparison tool:
+                                <br> If you’re using our tool to weigh up between a few VPNs, we want to help you make a responsible and informed buying decision. To help you do this, here’s a more detailed explanation of the attributes included in the
+                                comparison tool:
                             </p>
                         </div>
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Pricing</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Pricing</h2>
                             <p>
                                 While there are plenty of free VPNs on the market, the best VPN services cost money. Whether that cost is paid on a rolling monthly contract or a single up-front fee is up to you.
                                 <br>
+                                <br> Our tool lists each VPN’s free trial period (if there is one) and how long the money-back guarantee period is. Every reputable VPN will be happy to refund you if you aren’t satisfied with the product, so buying a VPN
+                                is extremely low-risk.
                                 <br>
-                                Our tool lists each VPN’s free trial period (if there is one) and how long the money-back guarantee period is. Every reputable VPN will be happy to refund you if you aren’t satisfied with the product, so buying a VPN is extremely low-risk.
-                                <br>
-                                <br>
-                                If you don’t need a full suite of features, then there are also a handful of trustworthy <a href="javascript:void(0);" class="text-black underline">free VPNs we recommend</a>.
+                                <br> If you don’t need a full suite of features, then there are also a handful of trustworthy <a href="javascript:void(0);" class="text-black underline">free VPNs we recommend</a>.
                             </p>
                         </div>
 
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Security & Privacy</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Security & Privacy</h2>
                             <p>
                                 No matter why you need a VPN, it’s vital you can trust it to keep your data encrypted and private.
                                 <br>
-                                <br>
-                                Our comparison tool keeps it simple by listing only the most important privacy and security features. You can see the type of data each VPN logs, where the VPN is incorporated, how it encrypts data, and whether it has suffered any data leaks in our testing.
+                                <br> Our comparison tool keeps it simple by listing only the most important privacy and security features. You can see the type of data each VPN logs, where the VPN is incorporated, how it encrypts data, and whether it
+                                has suffered any data leaks in our testing.
                             </p>
                         </div>
 
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Speed & Servers</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Speed & Servers</h2>
                             <p>
-                                Download speeds are important for a VPN, but they rely heavily on the service’s server network. Always check our full <a href="javascript:void(0);" class="text-black underline">VPN reviews</a> to make sure there is a server in or near your country as well as the country you want to connect to.
+                                Download speeds are important for a VPN, but they rely heavily on the service’s server network. Always check our full <a href="javascript:void(0);" class="text-black underline">VPN reviews</a> to make sure there is a server
+                                in or near your country as well as the country you want to connect to.
                                 <br>
-                                <br>
-                                We list average local download speeds in the comparison tool above. We test from London, UK, but if you connect to a server near your location then you should expect similar results.If you plan on mostly connecting to distant servers, we cover international speeds in our reviews and our <a href="javascript:void(0);" class="text-black underline">VPN speed comparison tool</a>.
+                                <br> We list average local download speeds in the comparison tool above. We test from London, UK, but if you connect to a server near your location then you should expect similar results.If you plan on mostly connecting
+                                to distant servers, we cover international speeds in our reviews and our <a href="javascript:void(0);" class="text-black underline">VPN speed comparison tool</a>.
                             </p>
                         </div>
 
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Streaming & P2P</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Streaming & P2P</h2>
                             <p>
                                 Streaming and torrenting are two of the most popular reasons to use a VPN.
                                 <br>
+                                <br> We put particular emphasis on whether or not a VPN can access the US Netflix library because of its popularity and huge range of content, but we don’t stop there. You can also see all of the other streaming services
+                                each VPN unblocked in our testing.
                                 <br>
-                                We put particular emphasis on whether or not a VPN can access the US Netflix library because of its popularity and huge range of content, but we don’t stop there. You can also see all of the other streaming services each VPN unblocked in our testing.
-                                <br>
-                                <br>
-                                As for torrenting, you can see whether P2P traffic is allowed by the VPN, and on how many servers it is permitted.
+                                <br> As for torrenting, you can see whether P2P traffic is allowed by the VPN, and on how many servers it is permitted.
                             </p>
                         </div>
 
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Compatibility</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Compatibility</h2>
                             <p>
                                 Good VPNs have applications for as many platforms and devices as possible, but even the best might not support the specific platform you’re looking for.
                                 <br>
-                                <br>
-                                In the comparison tool, you’ll find the devices each VPN makes a bespoke application for, as well as the devices that are supported by installing the VPN on your router. Smart DNS lets you stream foreign content libraries, but it won’t protect your traffic.
+                                <br> In the comparison tool, you’ll find the devices each VPN makes a bespoke application for, as well as the devices that are supported by installing the VPN on your router. Smart DNS lets you stream foreign content libraries,
+                                but it won’t protect your traffic.
                             </p>
                         </div>
 
                         <div class="mb-8">
-                            <h2 class="text-2xl lg:text-3xl font-medium text-black my-5">Advanced Features</h2>
+                            <h2 class="my-5 text-2xl font-medium text-black lg:text-3xl">Advanced Features</h2>
                             <p>
-                                Every VPN has a different set of features. Here you can see some of the more common extras that we think are particularly useful or important. The VPN kill switch is vital for keeping your connection secure, while the ability to work in China is critical if you live in any country with a censored internet.
+                                Every VPN has a different set of features. Here you can see some of the more common extras that we think are particularly useful or important. The VPN kill switch is vital for keeping your connection secure, while the ability to work in China is critical
+                                if you live in any country with a censored internet.
                             </p>
                         </div>
                     </div>
@@ -1004,128 +1035,142 @@
     </section>
     <!-- content section end here -->
 
-    <section class="relative mt-8 md:mb-20 mb-8">
+    <section class="relative mt-8 mb-8 md:mb-20">
         <div class="container">
             <div class="max-w-3xl mx-auto">
                 <!-- faq start here -->
-                <div class="text-2xl lg:text-3xl font-medium text-black text-center mb-8">Frequently Asked Questions</div>
+                <div class="mb-8 text-2xl font-medium text-center text-black lg:text-3xl">Frequently Asked Questions</div>
                 <div accordion="" class="mb-7">
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
-                      <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="true">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
+                        <div class="mb-0 accordion-toggle">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="true">
                             What is the #1 best VPN?
                           <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                             <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                           </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left">
-                            Based on our most recent tests, ExpressVPN is the current #1 VPN service. It has an extensive set of security features, consistently fast speeds, and intuitive applications for all devices. Importantly, it also has an excellent track record for protecting its users’ privacy.
-                            <br>
-                            <br>
-                            ExpressVPN works particularly well for unblocking geo-restricted streaming services. It can access 10 international Netflix regions, along with other popular services like Hulu, Disney Plus, and HBO Max.
-                            <br>
-                            <br>
-                            Put simply, ExpressVPN outperforms every other VPN service in almost every single testing category, and it has done so for several years. Despite its above-average subscription price, it’s absolutely worth it given its superior capabilities as a VPN.
                         </div>
-                      </div>
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80">
+                                Based on our most recent tests, ExpressVPN is the current #1 VPN service. It has an extensive set of security features, consistently fast speeds, and intuitive applications for all devices. Importantly, it also has an excellent track record for protecting
+                                its users’ privacy.
+                                <br>
+                                <br> ExpressVPN works particularly well for unblocking geo-restricted streaming services. It can access 10 international Netflix regions, along with other popular services like Hulu, Disney Plus, and HBO Max.
+                                <br>
+                                <br> Put simply, ExpressVPN outperforms every other VPN service in almost every single testing category, and it has done so for several years. Despite its above-average subscription price, it’s absolutely worth it given
+                                its superior capabilities as a VPN.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             Are VPN Services Legal?
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                          <br>
-                          <br>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </div>
-                      </div>
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                <br>
+                                <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             Are VPNs trustworthy?
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </div>
-                      </div>
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80 ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             How do I Set UP &amp; Use a VPN? 
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-                          <br>
-                          <br>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </div>
-                      </div>
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80 ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                <br>
+                                <br> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             Is it worth paying for a VPN?
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
                         </div>
-                      </div>              
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80 ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             Can you be tracked if you use a VPN?
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
                         </div>
-                      </div>              
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80 ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
-                    <div accordion-section="" class="mb-4 rounded-lg bg-white accordian-row">
+                    <div accordion-section="" class="mb-4 bg-white rounded-lg accordian-row">
                         <div class="mb-0 accordion-toggle">
-                        <button section-trigger="" class="relative flex items-center w-full p-4 font-semibold text-left transition-all  cursor-pointer ease-soft-in text-black text-base" aria-expanded="false">
+                            <button section-trigger="" class="relative flex items-center w-full p-4 text-base font-semibold text-left text-black transition-all cursor-pointer ease-soft-in" aria-expanded="false">
                             Which free VPNs are best?
                             <i section-open-icon="" class="absolute right-0 pt-1 mr-4 leading-tight">
                                 <img class="faq-arrow" src="images/chevron-down.svg" alt="#">
                             </i>
                         </button>
-                      </div>
-                      <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
-                        <div class="p-4 leading-normal text-base opacity-80 text-left ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
                         </div>
-                      </div>              
+                        <div section-content="" class="overflow-hidden transition-all ease-soft-in-out duration-350 accordion-content">
+                            <div class="p-4 text-base leading-normal text-left opacity-80 ">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1134,39 +1179,49 @@
 
     <!-- footer start here -->
     <footer class="bg-gray-light-100 md:py-14 py-14">
-    <div class="container mx-auto">
-        <div class="lg:flex justify-between align-middle border-b pb-3">
-            <div class="relative">
-                <span class="lg:absolute left-0 top-0"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
-                <p class="lg:pl-14 text-base font-medium">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+        <div class="container mx-auto">
+            <div class="justify-between pb-3 align-middle border-b lg:flex">
+                <div class="relative">
+                    <span class="top-0 left-0 lg:absolute"><img src="images/footer-logo.png" alt="#" class="inline-block"/></span>
+                    <p class="text-base font-medium lg:pl-14">vpnHunt is your expert guide in the VPN landscape, offering unbiased reviews, in-depth analysis, and user-centric insights. Trust our 150+ years of combined experience for secure, private browsing.</p>
+                </div>
+                <ul class="flex mt-3 space-x-3 lg:mt-0 lg:ml-8 social-icons">
+                    <li>
+                        <a href="javascript:void(0);" class="duration-300 facebook"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="duration-300 linkdin"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="duration-300 instagram"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="duration-300 youtube"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="duration-300 twitter"></a>
+                    </li>
+                </ul>
             </div>
-            <ul class="flex space-x-3 mt-3 lg:mt-0 lg:ml-8 social-icons">
-                <li><a href="javascript:void(0);" class="facebook duration-300"></a></li>
-                <li><a href="javascript:void(0);" class="linkdin duration-300"></a></li>
-                <li><a href="javascript:void(0);" class="instagram duration-300"></a></li>
-                <li><a href="javascript:void(0);" class="youtube duration-300"></a></li>
-                <li><a href="javascript:void(0);" class="twitter duration-300"></a></li>
+            <ul class="py-5 space-y-4 lg:flex lg:space-x-4 lg:space-y-0">
+                <li><a href="about.html" class="text-base font-medium hover:text-red-400">About Us</a></li>
+                <li><a href="team.html" class="text-base font-medium hover:text-red-400">Our VPN Experts</a></li>
+                <li><a href="javascript:void(0);" class="text-base font-medium hover:text-red-400">Our Reviews Process</a></li>
+                <li><a href="javascript:void(0);" class="text-base font-medium hover:text-red-400">Tools</a></li>
+                <li><a href="javascript:void(0);" class="text-base font-medium hover:text-red-400">Research</a></li>
+                <li><a href="contact-us.html" class="text-base font-medium hover:text-red-400">Contact</a></li>
             </ul>
+            <div class="flex-row-reverse justify-between align-middle lg:flex">
+                <ul class="lg:flex lg:space-x-4">
+                    <a href="privacy-policy.html" class="text-xs underline hover:text-red-400">Privacy Policy</a>
+                    <a href="cookies-policy.html" class="text-xs underline hover:text-red-400">Cookie Policy</a>
+                    <a href="terms-conditions.html" class="text-xs underline hover:text-red-400">Terms of Use</a>
+                    <a href="disclaimer.html" class="text-xs underline hover:text-red-400">Disclaimer</a>
+                </ul>
+                <p class="mt-2 text-xs lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023. All rights reserved.</p>
+            </div>
         </div>
-        <ul class="lg:flex lg:space-x-4 lg:space-y-0 space-y-4 py-5">
-            <li><a href="about.html" class="hover:text-red-400 text-base font-medium">About Us</a></li>
-            <li><a href="team.html" class="hover:text-red-400 text-base font-medium">Our VPN Experts</a></li>
-            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Our Reviews Process</a></li>
-            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Tools</a></li>
-            <li><a href="javascript:void(0);" class="hover:text-red-400 text-base font-medium">Research</a></li>
-            <li><a href="contact-us.html" class="hover:text-red-400 text-base font-medium">Contact</a></li>
-        </ul>
-          <div class="lg:flex flex-row-reverse justify-between align-middle">
-            <ul class="lg:flex lg:space-x-4">
-                <a href="privacy-policy.html" class="hover:text-red-400 text-xs underline">Privacy Policy</a>
-                <a href="cookies-policy.html" class="hover:text-red-400 text-xs underline">Cookie Policy</a>
-                <a href="terms-conditions.html" class="hover:text-red-400 text-xs underline">Terms of Use</a>
-                <a href="disclaimer.html" class="hover:text-red-400 text-xs underline">Disclaimer</a>
-            </ul>
-            <p class="text-xs mt-2 lg:mt-0">vpnHunt is managed by CyberPoint Media, LLC | © 2023.  All rights reserved.</p>
-          </div>
-    </div>
-</footer>
+    </footer>
     <!-- footer end here -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -1174,26 +1229,25 @@
     <script src="js/custom-script.js" type="text/javascript"></script>
 
     <script>
+        $("#add-compare").click(function() {
+            //  $(this).toggleClass("show-compare").siblings().removeClass("show-compare");
+            $(this).addClass("hidden").next("#remove-compare").removeClass("hidden");
+            // Get the div to duplicate
+            const originalDiv = $(".duplicate-content");
 
-$("#add-compare").click(function() {
-    //  $(this).toggleClass("show-compare").siblings().removeClass("show-compare");
-    $(this).addClass("hidden").next("#remove-compare").removeClass("hidden");
-  // Get the div to duplicate
-  const originalDiv = $(".duplicate-content");
+            // Clone the div with its content
+            const cloneDiv = originalDiv.clone(true);
 
-  // Clone the div with its content
-  const cloneDiv = originalDiv.clone(true);
+            // Add the clone after the original div
+            originalDiv.before(cloneDiv).addClass("duplicate-content2");
+        });
 
-  // Add the clone after the original div
-  originalDiv.before(cloneDiv).addClass("duplicate-content2");
-});
+        $("#remove-compare").click(function() {
+            $(".add-compare-row").children(".duplicate-content2").remove();
 
-$("#remove-compare").click(function() {
-    $(".add-compare-row").children(".duplicate-content2").remove();
-
-    // Clone the div with its content
-    $(this).addClass("hidden").prev("#add-compare").removeClass("hidden");
-});
+            // Clone the div with its content
+            $(this).addClass("hidden").prev("#add-compare").removeClass("hidden");
+        });
     </script>
 </body>
 
